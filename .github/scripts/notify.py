@@ -66,7 +66,8 @@ def main(template_path: str) -> None:
     if reference:
         fields.append({"name": "Reference", "value": reference, "inline": False})
 
-    fields.append({"name": "Path", "value": "`" + root_path.replace("/workspaces/nuclei-templates/", "") + "`", "inline": True})
+    fields.append({"name": "Path", "value": "`" + root_path.replace("/workspaces/nuclei-templates/", "") \
+                   .replace("/home/runner/work/nuclei-templates/nuclei-templates/", "") + "`", "inline": True})
     # ── Build Discord embed ────────────────────────────────────────────────────
     payload = {
         "embeds": [{
