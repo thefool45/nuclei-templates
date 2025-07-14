@@ -39,7 +39,7 @@ def main(template_path: str) -> None:
     template_id = str(data.get("id", "unknown"))
     root_path   = template_path.replace("\\", "/")
 
-    reference = "\n".join(info["reference"]).strip()
+    reference = "\n".join(info.get("reference", [])).strip()
 
     # pick a colour; default = mid-grey
     colour      = SEVERITY_COLOURS.get(severity, 0x95A5A6)
