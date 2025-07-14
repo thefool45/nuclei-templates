@@ -39,6 +39,8 @@ def main(template_path: str) -> None:
     template_id = str(data.get("id", "unknown"))
     root_path   = template_path.replace("\\", "/")
 
+    reference = "\n".join(info["reference"]).strip()
+
     # pick a colour; default = mid-grey
     colour      = SEVERITY_COLOURS.get(severity, 0x95A5A6)
     
@@ -52,12 +54,19 @@ def main(template_path: str) -> None:
     ]
 
     if shodan_query:
-        fields.append({"name": "Shodan", "value": f"`{shodan_query}`", "inline": False})
+        if isinstance(shodan_query, list):
+            shodan_query = "`\n- `".join(shodan_query)
+        fields.append({"name": "Shodan", "value": f"- `{shodan_query}`", "inline": False})
 
     if fofa_query:
-        fields.append({"name": "Fofa", "value": f"`{fofa_query}`", "inline": False})
+        if isinstance(fofa_query, list):
+            fofa_query = "`\n- `".join(fofa_query)
+        fields.append({"name": "Fofa", "value": f"- `{fofa_query}`", "inline": False})
 
-    fields.append({"name": "Path", "value": root_path, "inline": False})
+    if reference:
+        fields.append({"name": "Reference", "value": reference, "inline": False})
+
+    fields.append({"name": "Path", "value": "`" + root_path.replace("/workspaces/nuclei-templates/", "") + "`", "inline": True})
     # ── Build Discord embed ────────────────────────────────────────────────────
     payload = {
         "embeds": [{
