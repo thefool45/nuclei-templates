@@ -27,6 +27,7 @@ SEVERITY_ICONS = {
 }
 
 def main(template_path: str) -> None:
+    template_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), template_path)
     with open(template_path, "r", encoding="utf-8") as f:
         data = yaml.safe_load(f)
 
