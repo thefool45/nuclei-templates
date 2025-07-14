@@ -66,13 +66,16 @@ def main(action, template_path):
     if reference:
         fields.append({"name": "Reference", "value": reference, "inline": False})
 
-    fields.append({"name": "Path", "value": "`" + root_path.replace("/workspaces/nuclei-templates/", "") \
-                   .replace("/home/runner/work/nuclei-templates/nuclei-templates/", "") + "`", "inline": True})
+    root_path = root_path.replace("/workspaces/nuclei-templates/", "") \
+                   .replace("/home/runner/work/nuclei-templates/nuclei-templates/", "")
+    fields.append({"name": "Path", "value": "`" + root_path + "`", "inline": True})
     
     if action == "A":
         title = f"🆕 `{name}`"
     else:
-        title = f"✏️ `{name}`"
+        # Temporary Disable Notify Modified Template
+        return
+        # title = f"✏️ `{name}`"
 
     # ── Build Discord embed ────────────────────────────────────────────────────
     payload = {
