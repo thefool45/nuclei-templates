@@ -73,7 +73,7 @@ def main(action, template_path):
         title = f"🆕 `{name}`"
     else:
         title = f"✏️ `{name}`"
-        
+
     # ── Build Discord embed ────────────────────────────────────────────────────
     payload = {
         "embeds": [{
@@ -90,6 +90,8 @@ def main(action, template_path):
         resp = requests.post(os.environ["DISCORD_WEBHOOK"], json=payload, timeout=10)
         if resp.status_code == 429:
             time.sleep(1)
+            continue
+        break
     resp.raise_for_status()
 
 if __name__ == "__main__":
