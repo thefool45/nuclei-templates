@@ -31,11 +31,6 @@ def main(action, template_path):
     with open(template_path, "r", encoding="utf-8") as f:
         data = yaml.safe_load(f)
 
-    if action == "A":
-        title = f"🆕 `{name}`"
-    else:
-        title = f"✏️ `{name}`"
-
     # ── Extract info ────────────────────────────────────────────────────────────
     info        = data.get("info", {})                       # new nesting
     name        = pathlib.Path(template_path).name
@@ -73,6 +68,12 @@ def main(action, template_path):
 
     fields.append({"name": "Path", "value": "`" + root_path.replace("/workspaces/nuclei-templates/", "") \
                    .replace("/home/runner/work/nuclei-templates/nuclei-templates/", "") + "`", "inline": True})
+    
+    if action == "A":
+        title = f"🆕 `{name}`"
+    else:
+        title = f"✏️ `{name}`"
+        
     # ── Build Discord embed ────────────────────────────────────────────────────
     payload = {
         "embeds": [{
