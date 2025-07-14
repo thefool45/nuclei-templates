@@ -1,0 +1,78 @@
+#!/usr/bin/env python3
+"""
+Send a rich Discord embed whenever a new nuclei-template YAML is added.
+– severity & description now read from data["info"][…]
+– pretty colours that match severity
+"""
+
+import os, sys, yaml, pathlib, requests
+
+# Hex colours → int for Discord embeds
+SEVERITY_COLOURS = {
+    "critical": 0xB71C1C,  # 🔥 Darker red
+    "high":     0xE53935,  # Bright red
+    "medium":   0xFB8C00,  # Orange
+    "low":      0x03A9F4,  # Light blue
+    "info":     0x90A4AE,  # Soft grey-blue
+    "unknown":  0xB0BEC5
+}
+
+SEVERITY_ICONS = {
+    "critical": "🛑",  # stop sign = urgent + highly visible
+    "high":     "🔴",  # red circle
+    "medium":   "🟠",  # orange
+    "low":      "🔵",  # blue
+    "info":     "⚪",  # white
+    "unknown":  "⚪"
+}
+
+def main(template_path: str) -> None:
+    with open(template_path, "r", encoding="utf-8") as f:
+        data = yaml.safe_load(f)
+
+    # ── Extract info ────────────────────────────────────────────────────────────
+    info        = data.get("info", {})                       # new nesting
+    name        = pathlib.Path(template_path).name
+    severity    = str(info.get("severity", "unknown")).lower()
+    description = str(info.get("description", "No description"))
+    template_id = str(data.get("id", "unknown"))
+    root_path   = template_path.replace("\\", "/")
+
+    # pick a colour; default = mid-grey
+    colour      = SEVERITY_COLOURS.get(severity, 0x95A5A6)
+    
+    shodan_query = info.get("metadata", {}).get("shodan-query", None)
+    fofa_query   = info.get("metadata", {}).get("fofa-query", None)
+    severity_icon = SEVERITY_ICONS.get(severity, "⚪")
+
+    fields = [
+        {"name": "Template ID", "value": template_id, "inline": True},
+        {"name": "Severity",    "value": f"{severity_icon} {severity.upper()}",    "inline": True},
+    ]
+
+    if shodan_query:
+        fields.append({"name": "Shodan", "value": f"`{shodan_query}`", "inline": False})
+
+    if fofa_query:
+        fields.append({"name": "Fofa", "value": f"`{fofa_query}`", "inline": False})
+
+    fields.append({"name": "Path", "value": root_path, "inline": False})
+    # ── Build Discord embed ────────────────────────────────────────────────────
+    payload = {
+        "embeds": [{
+            "title": f"🆕 `{name}`",
+            "url":   f"https://github.com/projectdiscovery/nuclei-templates/blob/main/{root_path}",
+            "color": colour,
+            "fields": fields,
+            "description": f"```{description}```"
+        }]
+    }
+
+    # ── Send ────────────────────────────────────────────────────────────────────
+    resp = requests.post(os.environ["DISCORD_WEBHOOK"], json=payload, timeout=10)
+    resp.raise_for_status()
+
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        sys.exit("Usage: notify.py <template.yaml>")
+    main(sys.argv[1])
