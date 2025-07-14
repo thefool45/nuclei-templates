@@ -2,93 +2,75 @@ name: 🔄 Sync & Alert
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
     paths:
       - '**/*.yaml'
       - '**/*.yml'
   schedule:
-    - cron: '*/5 * * * *'    # every 5 minutes
-  workflow_dispatch:        # manual trigger
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
 
 permissions:
-  contents: write           # grant push rights to GITHUB_TOKEN
+  contents: write
 
 jobs:
   sync-and-alert:
     runs-on: ubuntu-latest
     steps:
-
-      # 1) Check out full history & enable pushes
+      # 1) Check out your fork, full history + creds so we can push
       - name: Check out repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
           persist-credentials: true
 
-      # 2) Record where HEAD starts (pre-merge)
-      - name: Save old HEAD
-        run: echo "OLD_HEAD=$(git rev-parse HEAD)" >> $GITHUB_ENV
-
-      # 3) Configure Git so merge commits have a valid author
+      # 2) Configure Git so commits have a valid author
       - name: Configure Git user
         run: |
-          git config --global user.name  "${{ github.actor }}"
-          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+          git config user.name  "${{ github.actor }}"
+          git config user.email "${{ github.actor }}@users.noreply.github.com"
 
-      # 4) Fetch upstream/main
-      - name: Add & fetch upstream
+      # 3) Add upstream remote & fetch its main branch
+      - name: Fetch upstream/main
         run: |
           git remote add upstream https://github.com/projectdiscovery/nuclei-templates.git || true
           git fetch upstream main
 
-      # 5) Merge in upstream changes & push them back to your fork
-      - name: Merge & push upstream/main
+      # 4) Detect any .yaml/.yml that upstream has but origin doesn't (new or restored)
+      - name: Detect upstream template additions
+        id: detect
         run: |
-          git merge --no-edit upstream/main
+          git diff --name-status origin/main..upstream/main \
+            | awk '($1=="A"||$1=="M") && /\.ya?ml$/{print $2}' \
+            > changes.txt || true
+          echo "count=$(wc -l < changes.txt)" >> $GITHUB_OUTPUT
+
+      # 5) For each of those files, check them out & commit them
+      - name: Sync templates from upstream
+        if: steps.detect.outputs.count != '0'
+        run: |
+          # get just the file paths
+          awk '{print}' changes.txt > files.txt
+          # restore them from upstream
+          git checkout upstream/main -- $(cat files.txt)
+          git add $(cat files.txt)
+          git commit -m "chore: sync templates from upstream" || echo "No changes to commit"
           git push origin main
 
-      # 6) Record where HEAD ends (post-merge)
-      - name: Save new HEAD
-        run: echo "NEW_HEAD=$(git rev-parse HEAD)" >> $GITHUB_ENV
-
-      # 7) Install Python & dependencies
-      - name: Set up Python
+      # 6) Set up Python to run notifier
+      - name: Set up Python & deps
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
-      - name: Install deps
+      - name: Install Python packages
         run: pip install pyyaml requests
 
-      # 8) Diff only the interval that just merged in
-      - name: Find newly added templates
-        id: find_new
-        run: |
-          if [ "$OLD_HEAD" = "$NEW_HEAD" ]; then
-            echo "count=0" >> $GITHUB_OUTPUT
-            exit 0
-          fi
-          RANGE="$OLD_HEAD..$NEW_HEAD"
-          echo "Diffing range: $RANGE"
-          git diff --name-status $RANGE \
-            | awk '$1=="A" && /\.ya?ml$/{print $2}' \
-            > new_templates.txt || true
-          echo "count=$(wc -l < new_templates.txt)" >> $GITHUB_OUTPUT
-
-      # 9) Bail if nothing new
-      - name: No new templates? skipping
-        if: steps.find_new.outputs.count == '0'
-        run: echo "No new templates to alert."
-
-      # 10) Notify Discord—only if file still exists
-      - name: Notify Discord of each new template
-        if: steps.find_new.outputs.count != '0'
+      # 7) Finally, send a Discord alert for each restored/added template
+      - name: Notify Discord
+        if: steps.detect.outputs.count != '0'
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
         run: |
           while read -r tpl; do
-            if [ -f "$tpl" ]; then
-              python .github/scripts/notify.py "$tpl"
-            else
-              echo "⚠️ Skipping missing file: $tpl"
-            fi
-          done < new_templates.txt
+            python .github/scripts/notify.py "$tpl"
+          done < changes.txt
