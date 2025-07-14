@@ -5,7 +5,7 @@ Send a rich Discord embed whenever a new nuclei-template YAML is added.
 – pretty colours that match severity
 """
 
-import os, sys, yaml, pathlib, requests
+import os, sys, yaml, pathlib, requests, time
 
 # Hex colours → int for Discord embeds
 SEVERITY_COLOURS = {
@@ -26,10 +26,15 @@ SEVERITY_ICONS = {
     "unknown":  "⚪"
 }
 
-def main(template_path: str) -> None:
+def main(action, template_path):
     template_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), template_path)
     with open(template_path, "r", encoding="utf-8") as f:
         data = yaml.safe_load(f)
+
+    if action == "A":
+        title = f"🆕 `{name}`"
+    else:
+        title = f"✏️ `{name}`"
 
     # ── Extract info ────────────────────────────────────────────────────────────
     info        = data.get("info", {})                       # new nesting
@@ -71,7 +76,7 @@ def main(template_path: str) -> None:
     # ── Build Discord embed ────────────────────────────────────────────────────
     payload = {
         "embeds": [{
-            "title": f"🆕 `{name}`",
+            "title": title,
             "url":   f"https://github.com/projectdiscovery/nuclei-templates/blob/main/{root_path}",
             "color": colour,
             "fields": fields,
@@ -80,10 +85,13 @@ def main(template_path: str) -> None:
     }
 
     # ── Send ────────────────────────────────────────────────────────────────────
-    resp = requests.post(os.environ["DISCORD_WEBHOOK"], json=payload, timeout=10)
+    while True:
+        resp = requests.post(os.environ["DISCORD_WEBHOOK"], json=payload, timeout=10)
+        if resp.status_code == 429:
+            time.sleep(1)
     resp.raise_for_status()
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        sys.exit("Usage: notify.py <template.yaml>")
-    main(sys.argv[1])
+    if len(sys.argv) != 3:
+        sys.exit("Usage: notify.py <state> <template.yaml>")
+    main(sys.argv[1], sys.argv[2])
