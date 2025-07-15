@@ -1,11 +1,6 @@
 name: 🔄 Sync & Alert
 
 on:
-  push:
-    branches: [ main ]
-    paths:
-      - '**/*.yaml'
-      - '**/*.yml'
   schedule:
     - cron: '*/5 * * * *'    # every 5 minutes
   workflow_dispatch:        # manual trigger
