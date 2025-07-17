@@ -26,6 +26,19 @@ SEVERITY_ICONS = {
     "unknown":  "⚪"
 }
 
+def notify_discord(payload):
+    lst_webhook = [
+        os.environ["DISCORD_WEBHOOK"],
+        os.environ["DISCORD_WEBHOOK_FLYSEC"]
+    ]
+    for webhook in lst_webhook:
+        while True:
+            resp = requests.post(webhook, json=payload, timeout=10)
+            if resp.status_code == 429:
+                time.sleep(1)
+                continue
+            break
+
 def main(action, template_path):
     template_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), template_path)
     with open(template_path, "r", encoding="utf-8") as f:
@@ -89,13 +102,7 @@ def main(action, template_path):
     }
 
     # ── Send ────────────────────────────────────────────────────────────────────
-    while True:
-        resp = requests.post(os.environ["DISCORD_WEBHOOK"], json=payload, timeout=10)
-        if resp.status_code == 429:
-            time.sleep(1)
-            continue
-        break
-    resp.raise_for_status()
+    notify_discord(payload)
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:
