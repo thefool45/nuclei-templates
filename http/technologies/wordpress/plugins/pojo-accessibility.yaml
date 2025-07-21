@@ -1,23 +1,23 @@
-id: wordpress-woocommerce
+id: wordpress-pojo-accessibility
 
 info:
-  name: WooCommerce Detection
+  name: Ally – Web Accessibility & Usability Detection
   author: ricardomaia
   severity: info
   reference:
-    - https://wordpress.org/plugins/woocommerce/
+    - https://wordpress.org/plugins/pojo-accessibility/
   metadata:
-    plugin_namespace: woocommerce
-    wpscan: https://wpscan.com/plugin/woocommerce
-  tags: tech,wordpress,wp-plugin,top-100,top-200
+    plugin_namespace: pojo-accessibility
+    wpscan: https://wpscan.com/plugin/pojo-accessibility
+  tags: tech,wordpress,wp-plugin,top-200
 
 http:
   - method: GET
     path:
-      - "{{BaseURL}}/wp-content/plugins/woocommerce/readme.txt"
+      - "{{BaseURL}}/wp-content/plugins/pojo-accessibility/readme.txt"
 
     payloads:
-      last_version: helpers/wordpress/plugins/woocommerce.txt
+      last_version: helpers/wordpress/plugins/pojo-accessibility.txt
 
     extractors:
       - type: regex
@@ -46,4 +46,3 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
-# digest: 490a0046304402205a7dae7911b138466a1d21010912d39c8fcad5604cbb5e94fda8745b1185932302204bb5d0ff06ad0a8b57d82be153a293191549c9f717857021622abe56419df111:922c64590222798bb761d5b6d8e72950
