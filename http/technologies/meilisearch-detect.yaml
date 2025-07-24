@@ -26,4 +26,4 @@ http:
           - 'status_code == 200'
           - 'contains(body, "Meilisearch is running")'
         condition: and
-# digest: 4a0a00473045022017a9003f136da6a86bf5fc451879f349abd9a6eef35c805abb9273b076631952022100cfa51f876960c1befddabad324c56247047b34b6b635dd5e138ffab7cfb4c50d:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a00473045022100cb8fd24f5f169bab3b54caddd18db3d05ccd1bdb3eabfad849f6f5bce42133d202203b3e6c04c9b6b65be8915d04adc5b329d6ac4fe1bb0bbdf666befc44e53e96ad:922c64590222798bb761d5b6d8e72950
