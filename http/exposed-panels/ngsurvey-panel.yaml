@@ -25,4 +25,4 @@ http:
           - 'status_code == 200'
           - 'contains_all(to_lower(body), "<title>ngsurvey enterprise survey software</title>", "ngsconfig.js")'
         condition: and
-# digest: 4b0a00483046022100cac1161f7318b082ca066b8add3ca6eed081735b3f194b8219436cd6faf0fe13022100bbcc0b1ae82091315e68c1032017e4ba6d0080429f1796ebfd703585428b9bbb:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a00473045022100a00423ecd868dd358ce0a09fe72f9a1f2945f7d7b97a959079aafaa765a0a7a4022056e2afb41a04ad27401e322a127de9458dc42e57d8cba1278e78d5541cf551b0:922c64590222798bb761d5b6d8e72950
