@@ -1,0 +1,2 @@
+.github/workflows/sync.yml merge=ours
+.github/scripts/notify.py merge=ours
