@@ -10,7 +10,13 @@ code/linux/audit/inactive-password-lock-default.yaml
 code/linux/audit/ldap-client.yaml
 code/linux/audit/ldap-server.yaml
 code/linux/audit/linux-account-lockout-threshold.yaml
+code/linux/audit/linux-nis-service.yaml
+code/linux/audit/linux-nisplus-service.yaml
+code/linux/audit/linux-rexec-service.yaml
+code/linux/audit/linux-rhosts-hostsequiv-misconfig.yaml
+code/linux/audit/linux-rlogin-service.yaml
 code/linux/audit/linux-root-remote-login.yaml
+code/linux/audit/linux-rsh-service.yaml
 code/linux/audit/message-access-server.yaml
 code/linux/audit/nis-client.yaml
 code/linux/audit/password-expiration.yaml
@@ -28,6 +34,7 @@ code/linux/audit/writable-xinetdconf.yaml
 http/cves/2018/CVE-2018-19127.yaml
 http/cves/2020/CVE-2020-11975.yaml
 http/cves/2020/CVE-2020-36708.yaml
+http/cves/2023/CVE-2023-1893.yaml
 http/cves/2023/CVE-2023-27163.yaml
 http/cves/2023/CVE-2023-37988.yaml
 http/cves/2025/CVE-2025-27888.yaml
@@ -47,9 +54,11 @@ http/exposed-panels/adobe/aem-forms-panel.yaml
 http/exposed-panels/espec-web-controller-panel.yaml
 http/exposed-panels/huawei-holosense-panel.yaml
 http/exposed-panels/hyperdx-panel.yaml
+http/exposed-panels/magicinfo-panel.yaml
 http/exposed-panels/zammad-helpdesk-panel.yaml
 http/exposed-panels/zipline-panel.yaml
 http/exposures/configs/bugzilla-config.yaml
+http/exposures/configs/magicinfo-config-exposure.yaml
 http/exposures/files/python-venv-exposure.yaml
 http/miscellaneous/atproto-did-exposure.yaml
 http/miscellaneous/mta-sts-exposure.yaml
