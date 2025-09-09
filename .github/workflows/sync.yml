@@ -12,7 +12,6 @@ on:
 
 permissions:
   contents: write            # grant GITHUB_TOKEN push rights
-  workflows: write   # 👈 ADD THIS
 
 jobs:
   sync-and-alert:
