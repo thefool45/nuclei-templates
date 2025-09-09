@@ -45,14 +45,33 @@ jobs:
             > changes.txt || true
           echo "count=$(wc -l < changes.txt)" >> $GITHUB_OUTPUT
 
-      # 5) Merge upstream into your fork (preserves .github/scripts folders)
       - name: Merge & push upstream changes (ignore .github)
         run: |
+          git fetch upstream main
+
+          # Cho phép merge có conflict mà KHÔNG dừng job
+          set +e
           git merge --no-commit --no-ff upstream/main
-          # Remove any changes to .github/** so they won't be committed
-          git restore --staged --worktree .github
-          git commit -m "Merge upstream without .github changes" || echo "No changes to commit"
-          git push origin main
+          set -e
+
+          # Bỏ mọi thay đổi dưới .github (giữ phiên bản hiện tại của bạn)
+          git restore --source=HEAD --staged --worktree -- .github/
+
+          # Nếu vẫn còn conflict ở file khác ngoài .github, dừng để tránh commit lỗi
+          if ! git diff --name-only --diff-filter=U --quiet; then
+            echo "❌ Còn conflict ngoài .github. Hủy merge để xử lý thủ công."
+            git merge --abort
+            exit 1
+          fi
+
+          # Chỉ commit khi thực sự có thay đổi
+          if git diff --quiet --staged; then
+            echo "No changes to commit"
+          else
+            git -c user.name="github-actions[bot]" -c user.email="github-actions[bot]@users.noreply.github.com" \
+              commit -m "Merge upstream without .github changes"
+            git push origin HEAD:main
+          fi
 
       # 6) Set up Python & install notifier dependencies
       - name: Set up Python & deps
