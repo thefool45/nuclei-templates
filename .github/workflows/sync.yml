@@ -8,10 +8,10 @@ on:
       - '**/*.yml'
   schedule:
     - cron: '*/5 * * * *'    # every 5 minutes
-  workflow_dispatch:        # manual trigger
+  workflow_dispatch:         # manual trigger
 
 permissions:
-  contents: write           # grant GITHUB_TOKEN push rights
+  contents: write            # grant GITHUB_TOKEN push rights
 
 jobs:
   sync-and-alert:
@@ -24,67 +24,75 @@ jobs:
           fetch-depth: 0
           persist-credentials: true
 
-      # 2) Configure Git so merge commits have valid author
+      # 2) Configure Git user
       - name: Configure Git user
         run: |
           git config --global user.name "${{ github.actor }}"
           git config --global user.email "${{ github.actor }}@users.noreply.github.com"
 
-      # 3) Add upstream remote & fetch its main branch
+      # 3) Add upstream remote & fetch main branch
       - name: Add & fetch upstream
         run: |
           git remote add upstream https://github.com/projectdiscovery/nuclei-templates.git || true
           git fetch upstream main
 
-      # 4) Detect new or modified templates upstream (before merge)
+      # 4) Detect new or modified templates before merge
       - name: Detect upstream template changes
         id: detect
         run: |
           git diff --name-status origin/main..upstream/main \
-            | awk '($1=="A" || $1=="M") && $2 ~ /\.yaml$/ {print $1 ":" $2}' \
+            | awk '($1=="A" || $1=="M") && $2 ~ /\.ya?ml$/ {print $1 ":" $2}' \
             > changes.txt || true
           echo "count=$(wc -l < changes.txt)" >> $GITHUB_OUTPUT
 
-      # 5) Merge upstream but do NOT change any workflow files; also protect notify.py
-      - name: Merge & push upstream changes (preserve workflows & notify.py)
+      # 5) Merge upstream while protecting specific files
+      - name: Merge upstream (protect sync.yaml & notify.py)
         run: |
-          set -e
-
-          # Attempt merge but don't fail the job on conflicts
           git merge --no-commit --no-ff upstream/main || true
 
-          # 1) By default, take upstream to resolve conflicts so the merge can complete
-          git checkout --theirs .
+          # Favor upstream by default
+          git checkout --theirs . || true
 
-          # 2) Preserve ALL local workflow files to avoid the GitHub App "workflows" permission block
-          git checkout --ours -- .github/workflows || true
+          # Restore our protected files
+          PROTECT_PATHS=(
+            ".github/workflows/sync.yaml"
+            ".github/scripts/notify.py"
+          )
 
-          # 3) Protect your notifier script
-          git checkout --ours -- .github/scripts/notify.py || true
-          git add -- .github/scripts/notify.py || true
-
-          # 4) If your sync file is .yml instead of .yaml, make sure it's preserved too (no-op if missing)
-          for p in ".github/workflows/sync.yml" ".github/workflows/sync.yaml"; do
-            git checkout --ours -- "$p" 2>/dev/null || true
-            git add -- "$p" 2>/dev/null || true
+          for p in "${PROTECT_PATHS[@]}"; do
+            if [ -f "$p" ]; then
+              git checkout --ours -- "$p" || true
+              git add -- "$p" || true
+            elif [ -f ".git/ORIG_HEAD" ]; then
+              # Try to restore from previous commit if deleted
+              git show HEAD:"$p" > "$p" 2>/dev/null && git add -- "$p" || true
+            fi
           done
 
-          # 5) Stage everything else and commit if needed
+          # Remove any unmerged files that cause issues
+          git ls-files --unmerged | cut -f2 | sort -u | xargs -r git rm --cached || true
+
+          # Stage all remaining changes
           git add -A
-          git commit -m "Merge upstream (preserve .github/workflows & notify.py)" || echo "No changes to commit"
 
-          # 6) Push (safe because workflows are unchanged)
-          git push origin main
+          # Commit only if there are staged changes
+          if ! git diff --cached --quiet; then
+            git commit -m "Merge upstream (protect sync.yaml & notify.py)"
+            git push origin main
+          else
+            echo "No changes to commit"
+          fi
 
-      # 6) Set up Python & install notifier dependencies
-      - name: Set up Python & deps
+      # 6) Setup Python for notification script
+      - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
-      - name: Install Python packages
+
+      - name: Install dependencies
         run: pip install pyyaml requests
 
-      # 7) Notify Discord for each added or modified template
+      # 7) Notify Discord for each change
       - name: Notify Discord
         if: steps.detect.outputs.count != '0'
         env:
@@ -95,7 +103,6 @@ jobs:
           while read -r change; do
             status=${change%%:*}
             tpl=${change#*:}
-            # skip if file missing for any reason
             [ -f "$tpl" ] || { echo "Skipping missing $tpl"; continue; }
             python .github/scripts/notify.py "$status" "$tpl"
           done < changes.txt
