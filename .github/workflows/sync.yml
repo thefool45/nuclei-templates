@@ -46,7 +46,11 @@ jobs:
           echo "count=$(wc -l < changes.txt)" >> $GITHUB_OUTPUT
 
       - name: Merge & push upstream changes (ignore .github)
+        shell: bash
         run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
           git fetch upstream main
 
           # Cho phép merge có conflict mà KHÔNG dừng job
@@ -54,24 +58,27 @@ jobs:
           git merge --no-commit --no-ff upstream/main
           set -e
 
-          # Bỏ mọi thay đổi dưới .github (giữ phiên bản hiện tại của bạn)
-          git restore --source=HEAD --staged --worktree -- .github/
+          # Giải quyết mọi xung đột trong .github bằng cách giữ "ours" (phiên bản repo của bạn)
+          git restore --staged --worktree --ours -- .github
 
-          # Nếu vẫn còn conflict ở file khác ngoài .github, dừng để tránh commit lỗi
+          # Nếu vẫn còn xung đột bên ngoài .github, hủy merge để xử lý thủ công
           if ! git diff --name-only --diff-filter=U --quiet; then
-            echo "❌ Còn conflict ngoài .github. Hủy merge để xử lý thủ công."
+            echo "❌ Còn conflicts ngoài .github. Hủy merge."
             git merge --abort
             exit 1
           fi
 
-          # Chỉ commit khi thực sự có thay đổi
+          # Bỏ mọi thay đổi .github từ upstream ngay cả khi merge sạch
+          git restore --staged --worktree -- .github
+
+          # Chỉ commit nếu có thay đổi thực sự
           if git diff --quiet --staged; then
             echo "No changes to commit"
-          else
-            git -c user.name="github-actions[bot]" -c user.email="github-actions[bot]@users.noreply.github.com" \
-              commit -m "Merge upstream without .github changes"
-            git push origin HEAD:main
+            exit 0
           fi
+
+          git commit -m "Merge upstream without .github changes"
+          git push origin HEAD:main
 
       # 6) Set up Python & install notifier dependencies
       - name: Set up Python & deps
