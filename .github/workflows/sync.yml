@@ -45,29 +45,35 @@ jobs:
             > changes.txt || true
           echo "count=$(wc -l < changes.txt)" >> $GITHUB_OUTPUT
 
-      # 5) Merge upstream but protect two files
-      - name: Merge & push upstream changes (protect selected files)
+      # 5) Merge upstream but do NOT change any workflow files; also protect notify.py
+      - name: Merge & push upstream changes (preserve workflows & notify.py)
         run: |
+          set -e
+
+          # Attempt merge but don't fail the job on conflicts
           git merge --no-commit --no-ff upstream/main || true
 
-          # Let merge favor upstream by default so it can finish
+          # 1) By default, take upstream to resolve conflicts so the merge can complete
           git checkout --theirs .
 
-          # Now restore OUR versions of the protected files (even if upstream deleted them)
-          PROTECT_PATHS=(
-            ".github/workflows/sync.yaml"
-            ".github/scripts/notify.py"
-          )
-          for p in "${PROTECT_PATHS[@]}"; do
-            # Bring back our copy
-            git checkout --ours -- "$p" || true
-            # Ensure they're staged (re-added if upstream deleted them)
-            git add -- "$p" || true
+          # 2) Preserve ALL local workflow files to avoid the GitHub App "workflows" permission block
+          git checkout --ours -- .github/workflows || true
+
+          # 3) Protect your notifier script
+          git checkout --ours -- .github/scripts/notify.py || true
+          git add -- .github/scripts/notify.py || true
+
+          # 4) If your sync file is .yml instead of .yaml, make sure it's preserved too (no-op if missing)
+          for p in ".github/workflows/sync.yml" ".github/workflows/sync.yaml"; do
+            git checkout --ours -- "$p" 2>/dev/null || true
+            git add -- "$p" 2>/dev/null || true
           done
 
-          # Stage everything else and commit
+          # 5) Stage everything else and commit if needed
           git add -A
-          git commit -m "Merge upstream (protect sync.yaml & notify.py)" || echo "No changes to commit"
+          git commit -m "Merge upstream (preserve .github/workflows & notify.py)" || echo "No changes to commit"
+
+          # 6) Push (safe because workflows are unchanged)
           git push origin main
 
       # 6) Set up Python & install notifier dependencies
