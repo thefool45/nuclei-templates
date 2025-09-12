@@ -53,7 +53,10 @@ def get_shodan_query_count(query):
 	r = requests.get(url)
 	if r.status_code == 200:
 		d = r.json()
-		all_total = d.get("total")
+		try:
+			all_total = d.get("total")
+		except AttributeError:
+			return f"Error: {d}"
 
 	return f"Total: {all_total}"
 
