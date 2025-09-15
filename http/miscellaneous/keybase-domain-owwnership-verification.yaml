@@ -36,4 +36,4 @@ http:
         part: body
         regex:
           - "-----BEGIN PGP MESSAGE-----[\\s\\S]+?-----END PGP MESSAGE-----"
-# digest: 4a0a00473045022100df06f6147cd4cb15215abf0c542cc5df911eb8905d02dae75941badbcb281643022075fcb1a2eecc1dd5ab82ca8e34efd11586c20ac46df2afc0e8a8aa579d946f26:922c64590222798bb761d5b6d8e72950
+# digest: 490a0046304402206f2f2d46593efec4e08aa49e537473a192d36f818e164ecfbca31e1b61b96eea022024cf27dccd2fe450edbf4620aeb40288a2dd156ba8a4fa52efecb7834c3d595c:922c64590222798bb761d5b6d8e72950
