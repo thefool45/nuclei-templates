@@ -5,6 +5,7 @@ http/cves/2019/CVE-2019-15774.yaml
 http/cves/2019/CVE-2019-17228.yaml
 http/cves/2019/CVE-2019-17230.yaml
 http/cves/2019/CVE-2019-17231.yaml
+http/cves/2019/CVE-2019-17233.yaml
 http/cves/2019/CVE-2019-7195.yaml
 http/cves/2019/CVE-2019-9880.yaml
 http/cves/2019/CVE-2019-9881.yaml
@@ -15,6 +16,7 @@ http/cves/2020/CVE-2020-27615.yaml
 http/cves/2020/CVE-2020-36155.yaml
 http/cves/2020/CVE-2020-36836.yaml
 http/cves/2021/CVE-2021-24170.yaml
+http/cves/2021/CVE-2021-24527.yaml
 http/cves/2021/CVE-2021-24644.yaml
 http/cves/2021/CVE-2021-24876.yaml
 http/cves/2021/CVE-2021-24878.yaml
@@ -63,6 +65,7 @@ http/exposed-panels/dell-remote-web-access-panel.yaml
 http/exposed-panels/hpe-officeconnect-panel.yaml
 http/exposed-panels/mitel-nupoint-panel.yaml
 http/exposed-panels/phoenix-contact-charx-panel.yaml
+http/exposed-panels/scan2net-panel.yaml
 http/exposures/apis/phoenix-contact-charx-api.yaml
 http/exposures/configs/n8n-config.yaml
 http/exposures/configs/nocobase-config.yaml
