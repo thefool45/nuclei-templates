@@ -34,6 +34,7 @@ http/cves/2023/CVE-2023-6000.yaml
 http/cves/2024/CVE-2024-11972.yaml
 http/cves/2024/CVE-2024-2771.yaml
 http/cves/2024/CVE-2024-2782.yaml
+http/cves/2024/CVE-2024-28000.yaml
 http/cves/2024/CVE-2024-29028.yaml
 http/cves/2024/CVE-2024-29029.yaml
 http/cves/2024/CVE-2024-29030.yaml
@@ -95,6 +96,7 @@ javascript/misconfiguration/netstat-service-expose.yaml
 javascript/misconfiguration/unauth-vnc-server-detect.yaml
 javascript/udp/detection/zeroconf-detect.yaml
 javascript/udp/misconfiguration/snmpv1-community-detect-string.yaml
+network/cves/2022/CVE-2022-37932.yaml
 network/detection/direct-connect-detect.yaml
 network/detection/ftp-detect.yaml
 network/detection/ftp/3com-ftp-detect.yaml

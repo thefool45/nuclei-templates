@@ -27,4 +27,4 @@ http:
           - 'contains(to_lower(body), "file exchange</title>")'
           - 'contains_any(to_lower(body), "main-b2b-icon.png", "fileexchange.ico")'
         condition: and
-# digest: 4a0a00473045022072390265e8a1957ac703ad724e70a998e626eadc2c03d5c6fc326070dd597599022100cbef5af8ffae007b623528e63f8a2ca2e912d63ce7583758675afbb28f5139ff:922c64590222798bb761d5b6d8e72950
+# digest: 4b0a00483046022100cd16c799f87e0deb3e4b52a0e58b56a2698bcf9831a410e996afa1d4f45c954a022100888a5f19977be8e0d72199787fe2e864797af2b092cd67effeb2205d84522846:922c64590222798bb761d5b6d8e72950
