@@ -1,4 +1,5 @@
 http/cves/2015/CVE-2015-9406.yaml
+http/cves/2016/CVE-2016-10972.yaml
 http/cves/2019/CVE-2019-11886.yaml
 http/cves/2019/CVE-2019-17232.yaml
 http/cves/2019/CVE-2019-7276.yaml
@@ -16,6 +17,7 @@ http/cves/2022/CVE-2022-3805.yaml
 http/cves/2022/CVE-2022-38627.yaml
 http/cves/2022/CVE-2022-41352.yaml
 http/cves/2023/CVE-2023-26258.yaml
+http/cves/2023/CVE-2023-3169.yaml
 http/cves/2023/CVE-2023-4666.yaml
 http/cves/2023/CVE-2023-5559.yaml
 http/cves/2024/CVE-2024-31839.yaml
