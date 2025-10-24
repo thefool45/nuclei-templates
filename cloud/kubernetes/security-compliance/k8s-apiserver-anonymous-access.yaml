@@ -42,4 +42,4 @@ code:
       - type: dsl
         dsl:
           - '"kube-apiserver configuration does not explicitly set " + argument + ". This may allow anonymous access."'
-# digest: 4b0a00483046022100ce70edbd8a2e821fa69df63e33642e7af42bae7ca4cee8bd10542cdde8d11c220221009b8d48f7bbb9d6520cf5764b43679cb8b292c90940de91290c504ff9aeefea2b:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a00473045022100e7dd568690c65ff5cfcf56f9ab2afd35421662a76f330d45655cbaecca2dabba02202f31a18518253eace284b9d3871026c5fad005cf671e76cf58e4fdfaa4c48b9a:922c64590222798bb761d5b6d8e72950
