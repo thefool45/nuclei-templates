@@ -33,4 +33,4 @@ http:
           - 'contains(content_type, "application/xml")'
           - 'contains_all(body, "<web-app", "<?xml version")'
         condition: and
-# digest: 4a0a00473045022100fa17e7902b9afd33d9b624f7eeb3f3e595ff6dc3358baf3a157ad149f92e964e0220639c1acf1b33a4730c759127327e58709b7fadb0044678e55ab124af0fda7b65:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a00473045022057850b5a056c0faa0de3b909e7ecce64fa080cf4d775e0cfb76af6bf66219516022100d46fb37b1779baa4493ae5ad49236e8bb95cf6d42ddea7c83b7c1a29c3253c25:922c64590222798bb761d5b6d8e72950
