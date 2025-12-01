@@ -2,8 +2,10 @@ CVE-2024-47308.yaml
 dast/vulnerabilities/xss/csp-bypass/google-storage-csp-bypass.yaml
 dns/spf-limit-lookup.yaml
 http/cves/2020/CVE-2020-11732.yaml
+http/cves/2021/CVE-2021-36888.yaml
 http/cves/2023/CVE-2023-30869.yaml
 http/cves/2023/CVE-2023-38875.yaml
 http/cves/2024/CVE-2024-9161.yaml
+http/cves/2025/CVE-2025-10211.yaml
 http/default-logins/redis/redis-commander-default-login.yaml
 http/misconfiguration/kafka-api-cluster.yaml
