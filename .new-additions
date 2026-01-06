@@ -1,3 +1,5 @@
+cloud/gcp/iam/gcloud-service-account-keys-rotation.yaml
+code/cves/2025/CVE-2025-68926.yaml
 http/cves/2006/CVE-2006-3392.yaml
 http/cves/2016/CVE-2016-15043.yaml
 http/cves/2017/CVE-2017-11107.yaml
@@ -18,9 +20,11 @@ http/cves/2024/CVE-2024-4455.yaml
 http/cves/2024/CVE-2024-5057.yaml
 http/cves/2024/CVE-2024-6753.yaml
 http/cves/2025/CVE-2025-34291.yaml
+http/cves/2025/CVE-2025-62522.yaml
 http/cves/2025/CVE-2025-68645.yaml
 http/cves/2025/CVE-2025-8848.yaml
 http/exposed-panels/bitbucket-panel.yaml
+http/exposed-panels/ekoapi-admin-panel.yaml
 http/exposed-panels/librechat-login-panel.yaml
 http/exposed-panels/victoriametrics-panel.yaml
 http/exposed-panels/woodpecker-ci-panel.yaml
