@@ -15,6 +15,7 @@ http/cves/2022/CVE-2022-4940.yaml
 http/cves/2023/CVE-2023-27351.yaml
 http/cves/2023/CVE-2023-33193.yaml
 http/cves/2024/CVE-2024-28986.yaml
+http/cves/2024/CVE-2024-29931.yaml
 http/cves/2024/CVE-2024-30194.yaml
 http/cves/2024/CVE-2024-3469.yaml
 http/cves/2024/CVE-2024-43971.yaml
@@ -34,6 +35,7 @@ http/exposed-panels/xspeeder-login.yaml
 http/exposures/configs/bash-config-exposure.yaml
 http/exposures/configs/exposed-gitmodules.yaml
 http/exposures/configs/flow-config-exposure.yaml
+http/exposures/configs/grafana-metrics-exposure.yaml
 http/exposures/configs/jfrog-artifactory-build-exposure.yaml
 http/exposures/configs/keycloak-admin-console-config.yaml
 http/exposures/configs/makefile-exposure.yaml
