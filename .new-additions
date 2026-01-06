@@ -33,6 +33,7 @@ http/exposures/configs/keycloak-admin-console-config.yaml
 http/exposures/configs/makefile-exposure.yaml
 http/exposures/configs/mysql-config-exposure.yaml
 http/exposures/configs/prettier-ignore-disclosure.yaml
+http/exposures/files/jolokia-config-exposure.yaml
 http/exposures/files/kcfinder-exposure.yaml
 http/exposures/files/postgres-credentials-exposure.yaml
 http/exposures/files/python-requirements-disclosure.yaml
@@ -58,4 +59,5 @@ http/vulnerabilities/wordpress/wp-custom-post-type-ui-fpd.yaml
 http/vulnerabilities/wordpress/wp-instagram-feed-xss.yaml
 http/vulnerabilities/wordpress/wp-simple-custom-css-fpd.yaml
 http/vulnerabilities/wordpress/wp-user-role-editor-fpd.yaml
+javascript/cves/2018/CVE-2018-8011.yaml
 javascript/cves/2025/CVE-2025-14847.yaml
