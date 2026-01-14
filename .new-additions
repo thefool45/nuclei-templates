@@ -3,6 +3,7 @@ http/cves/2018/CVE-2018-7765.yaml
 http/cves/2019/CVE-2019-14206.yaml
 http/cves/2020/CVE-2020-19363.yaml
 http/cves/2021/CVE-2021-37598.yaml
+http/cves/2023/CVE-2023-52163.yaml
 http/cves/2025/CVE-2025-25570.yaml
 http/cves/2025/CVE-2025-46349.yaml
 http/cves/2025/CVE-2025-46549.yaml
@@ -11,6 +12,7 @@ http/cves/2026/CVE-2026-21858.yaml
 http/exposed-panels/dagster-webserver-ui-exposure.yaml
 http/exposed-panels/sanity-studio-panel.yaml
 http/exposures/backups/batflat-sqlite-exposure.yaml
+http/exposures/configs/netlify-headers-config-exposure.yaml
 http/exposures/files/gcloudignore-file.yaml
 http/exposures/files/joe-deadjoe-file-exposure.yaml
 http/exposures/files/postgres-history-exposure.yaml
@@ -23,6 +25,7 @@ http/misconfiguration/google-calendar-exposure.yaml
 http/misconfiguration/installer/fork-installer.yaml
 http/misconfiguration/lightstreamer-dashboard-exposure.yaml
 http/misconfiguration/mybb-full-path-disclosure.yaml
+http/misconfiguration/ollama-improper-authorization.yaml
 http/misconfiguration/wordpress/wp-add-search-to-menu-fpd.yaml
 http/misconfiguration/wordpress/wp-advanced-iframe-fpd.yaml
 http/misconfiguration/wordpress/wp-advanced-responsive-video-embedder-fpd.yaml
