@@ -23,6 +23,7 @@ http/exposures/apis/frigate-api-exposure.yaml
 http/exposures/backups/batflat-sqlite-exposure.yaml
 http/exposures/configs/netlify-headers-config-exposure.yaml
 http/exposures/configs/selenium-grid-exposure.yaml
+http/exposures/configs/zipkin-config-exposure.yaml
 http/exposures/files/aws-buildspec-exposure.yaml
 http/exposures/files/gcloudignore-file.yaml
 http/exposures/files/gitpod-dockerfile-exposure.yaml
@@ -32,7 +33,9 @@ http/exposures/files/vscode-mcp-json.yaml
 http/exposures/logs/cacti-log-exposure.yaml
 http/exposures/logs/magento-debug-log-exposure.yaml
 http/exposures/logs/opencart-error-log.yaml
+http/exposures/logs/wp-wpstatistics-log.yaml
 http/exposures/tokens/azure/azure-instrumentation-key-exposure.yaml
+http/misconfiguration/administrate-dashboard.yaml
 http/misconfiguration/apache-spark-env.yaml
 http/misconfiguration/cacti-fpd.yaml
 http/misconfiguration/exist-db-dashboard-access.yaml
