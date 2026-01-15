@@ -43,12 +43,14 @@ http/misconfiguration/lightstreamer-dashboard-exposure.yaml
 http/misconfiguration/mybb-full-path-disclosure.yaml
 http/misconfiguration/ollama-improper-authorization.yaml
 http/misconfiguration/stylelint-ignore-disclosure.yaml
+http/misconfiguration/wordpress/wp-a3-lazy-load-top-fpd.yaml
 http/misconfiguration/wordpress/wp-add-search-to-menu-fpd.yaml
 http/misconfiguration/wordpress/wp-advanced-iframe-fpd.yaml
 http/misconfiguration/wordpress/wp-advanced-responsive-video-embedder-fpd.yaml
 http/misconfiguration/wordpress/wp-ajax-load-more-anything-fpd.yaml
 http/misconfiguration/wordpress/wp-ajax-search-lite-fpd.yaml
 http/misconfiguration/wordpress/wp-call-now-button-fpd.yaml
+http/misconfiguration/wordpress/wp-cf7-data-source-fpd.yaml
 http/misconfiguration/wordpress/wp-duplicate-page-fpd.yaml
 http/misconfiguration/wordpress/wp-hostinger-fpd.yaml
 http/misconfiguration/wordpress/wp-really-simple-captcha-fpd.yaml
