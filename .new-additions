@@ -4,10 +4,12 @@ http/cves/2018/CVE-2018-7765.yaml
 http/cves/2019/CVE-2019-12935.yaml
 http/cves/2019/CVE-2019-14206.yaml
 http/cves/2020/CVE-2020-19363.yaml
+http/cves/2020/CVE-2020-26935.yaml
 http/cves/2020/CVE-2020-9039.yaml
 http/cves/2021/CVE-2021-22881.yaml
 http/cves/2021/CVE-2021-37598.yaml
 http/cves/2022/CVE-2022-0188.yaml
+http/cves/2022/CVE-2022-41697.yaml
 http/cves/2023/CVE-2023-33960.yaml
 http/cves/2023/CVE-2023-52163.yaml
 http/cves/2024/CVE-2024-23055.yaml
@@ -25,7 +27,6 @@ http/cves/2025/CVE-2025-56520.yaml
 http/cves/2025/CVE-2025-66472.yaml
 http/cves/2026/CVE-2026-21858.yaml
 http/cves/2026/CVE-2026-23550.yaml
-http/cves/CVE-2020-26935.yaml
 http/default-logins/jhipster-default-login.yaml
 http/exposed-panels/dagster-webserver-ui-exposure.yaml
 http/exposed-panels/orbeon-forms-exposure.yaml
@@ -92,6 +93,8 @@ http/misconfiguration/seafile-public-registration.yaml
 http/misconfiguration/sendmail-forward-exposure.yaml
 http/misconfiguration/springboot/springboot-x-application-context.yaml
 http/misconfiguration/stylelint-ignore-disclosure.yaml
+http/misconfiguration/umbraco-directory-listing.yaml
+http/misconfiguration/weblate-public-project-exposure.yaml
 http/misconfiguration/wordpress/wp-a3-lazy-load-top-fpd.yaml
 http/misconfiguration/wordpress/wp-add-search-to-menu-fpd.yaml
 http/misconfiguration/wordpress/wp-advanced-iframe-fpd.yaml
