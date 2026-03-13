@@ -55,4 +55,4 @@ http:
           - 'squarespace-site-id=([a-z0-9]+)'
           - 'siteid="([a-zA-Z0-9]+)"'
           - 'squarespace\.com/([^/]+)'
-# digest: 4a0a0047304502204a2bce32c4bb2f62a3b6eed9824af0309bf0b2c4178cb1895f1eec7d1cb30a46022100b744dde1e1f4c811c42ac076c62bb598cfb54c74bf5f95fa9fc854a1c12ed35c:922c64590222798bb761d5b6d8e72950
+# digest: 490a004630440220404b51ff31cf097adc4a9d8d16ed882670adcb35aba754e48e23f0443efcf4e0022049d3f8be08e936f205b17af9be658f7cf519acfc86b8cc17d81afd2ba48b998d:922c64590222798bb761d5b6d8e72950
