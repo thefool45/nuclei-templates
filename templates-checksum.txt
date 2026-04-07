@@ -704,7 +704,7 @@ code/cves/2025/CVE-2025-22457.yaml:2236f378ca08f5c0188e54c5db536be254d2061e
 code/cves/2025/CVE-2025-25291.yaml:896547463dba8110d926b4f4855514fb80f3ed81
 code/cves/2025/CVE-2025-32433.yaml:d9a8bd6082a0dc9d7c1bc60c7947a761f02e2164
 code/cves/2025/CVE-2025-32463.yaml:1b6b273bc8166f4ee0f6227f28d49ec83acda742
-code/cves/2025/CVE-2025-54309.yaml:02e26ea20348bec30cb50407f354c3a9925196c5
+code/cves/2025/CVE-2025-54309.yaml:449b751d7ff0e9f3c76461fcadb1d7847cdb98aa
 code/cves/2025/CVE-2025-6216.yaml:de3068765ba46d1f6fad19f06b858f9859b1cc48
 code/cves/2025/CVE-2025-68926.yaml:38a95930565ef79fceafef2acbf36c4fdd498503
 code/cves/2025/CVE-2025-6984.yaml:4fbb7e28e362c04c15abfa379b82bfc8b77bdefd
@@ -957,8 +957,8 @@ code/windows/enumeration/rdp-ntlm-info.yaml:a4e4ee99b93ce4d060d0e525bf8a4d6c6f15
 code/windows/enumeration/unquoted-service-paths.yaml:2663d300b15940f45ad54d0e731821fba65d8bd4
 code/windows/get-stored-credentials-cmdkey.yaml:0355b4ae1b0a1fdac60cea737538510bdebe6382
 contributors.json:362462fcd69214ad2fc765d007d8ac58dfe38344
-cves.json:8bbf1b5322f670603109b124dd86809e5f20a47a
-cves.json-checksum.txt:9e7691f130d822006c9aed25436ad52355f04708
+cves.json:e6a8cc7b6b5dc893339a450b799af46cf4392156
+cves.json-checksum.txt:60bdb2b3071674507c5844b60684f7f0745442ab
 dast/ai/ai-code-execution.yaml:22499b9349751bc0841e3c87a9ad36f17d98c565
 dast/ai/ai-data-exfiltration.yaml:7c3b8514ff64b5ba6737ee77bf3c71a074e9540c
 dast/ai/ai-prompt-injection.yaml:509eeec9e6458911087a2f93e2358a4b5e285429
@@ -1473,9 +1473,9 @@ file/keys/wireguard/wireguard-preshared.yaml:d46e739b569d876b3d2b38b70865fd42cf7
 file/keys/wireguard/wireguard-private.yaml:b6205c5c9390056f264ec92790d4651d19c0ad69
 file/keys/zapier-webhook.yaml:2e9c468a9b0eed2a6440a1cf827e888a9ac6edac
 file/keys/zendesk-secret-key.yaml:b1ad38c1f02f9417dadfe2f8b07da3d3af4b06c7
-file/logs/aspnet-framework-exceptions.yaml:78baa47aca6abae92914d6830978f02eab52a177
+file/logs/aspnet-framework-exceptions.yaml:edf3d51b301e95cb718c72f49cd5b4860a18cf25
 file/logs/django-framework-exceptions.yaml:11f2844d91bd7d71ccc93dc5cc3e6a7d7d556a29
-file/logs/nodejs-framework-exceptions.yaml:85df52e5feef83142e4709c2d9c4715c177b0123
+file/logs/nodejs-framework-exceptions.yaml:10f60e76435e09e32d7935d53a8712d2e11509d0
 file/logs/python-app-sql-exceptions.yaml:fae875f162ba7159717d28aae03277774181b308
 file/logs/ruby-on-rails-framework-exceptions.yaml:52687d5d2e31f43e2d65d80259d63f1e140a876e
 file/logs/spring-framework-exceptions.yaml:f52c14b9e2cad82d791513e7cee32af8261d05db
@@ -3044,7 +3044,7 @@ http/cves/2020/CVE-2020-12478.yaml:a6d8405d48b0e90dc9b997928007ea5efedeae35
 http/cves/2020/CVE-2020-12641.yaml:a5e8f5db3f9bbf2b811fbb17165e4bd0603d672b
 http/cves/2020/CVE-2020-12720.yaml:2721c6d1018de6173c10c15b6cee5df299f7c824
 http/cves/2020/CVE-2020-12800.yaml:0eb13e3905831ff3249db90f1c2e41508a3ce9b3
-http/cves/2020/CVE-2020-12832.yaml:5f9ab3952745da24d6cfed102e03cd21f6f78afa
+http/cves/2020/CVE-2020-12832.yaml:0d662dbfea023923cb16dc4670b240dc2c6c6f76
 http/cves/2020/CVE-2020-13117.yaml:5dfc7aa8e94c435bb498da82aaf943a586b52bf1
 http/cves/2020/CVE-2020-13121.yaml:9484b2470ba8176612cf19c6e69920b683eed826
 http/cves/2020/CVE-2020-13125.yaml:08abe28d49de8d0777f66fced31f84fe8a899561
@@ -3669,7 +3669,7 @@ http/cves/2021/CVE-2021-36646.yaml:824dfe6b5487b7bb3c22befad179e9c8bacfcd23
 http/cves/2021/CVE-2021-36748.yaml:cef8ea6de1af15edd25b6285328524f10040ea6d
 http/cves/2021/CVE-2021-36749.yaml:63acf4fc71848360f5738c098b68945285427352
 http/cves/2021/CVE-2021-36873.yaml:8bd0e19c28c64e8188ea1122aabe6a9d2e788a2f
-http/cves/2021/CVE-2021-36888.yaml:190e5b35f7f72eac9b2a03c6fd51c77901178a17
+http/cves/2021/CVE-2021-36888.yaml:dd8ab48f6451d3398d57a878cd692c01d6d81a18
 http/cves/2021/CVE-2021-37216.yaml:4f111c4923d0179d5e0293c58471a1d7f4364301
 http/cves/2021/CVE-2021-37291.yaml:aff6fbe2c1abfefafbee21a821be0bac1c39c662
 http/cves/2021/CVE-2021-37292.yaml:cf31b9464568f39823445e03de15a3583265abfc
@@ -4117,7 +4117,7 @@ http/cves/2022/CVE-2022-28363.yaml:4573fd6bf5d40536d2293fbf13f6c94a1b51ae60
 http/cves/2022/CVE-2022-28365.yaml:b1043b9607c54ed5b17cfdc08eed9d1d506e2a03
 http/cves/2022/CVE-2022-28508.yaml:e7bc2833dc010cd72d56a29a89d76d9a790144e2
 http/cves/2022/CVE-2022-2863.yaml:76641e1d8de149ecb5735c2f2807eaabb9200bb7
-http/cves/2022/CVE-2022-28666.yaml:8872a221e98f8d99c10e132c7b4e73d254b24671
+http/cves/2022/CVE-2022-28666.yaml:d3b138af3fec210ec7bd4d15867587831a7d5865
 http/cves/2022/CVE-2022-28923.yaml:78480a81c25f243ce4541cfd5137ab35d15d9e04
 http/cves/2022/CVE-2022-28955.yaml:ca1f8536caa030fa20f905c8f9575f818cfa0fb0
 http/cves/2022/CVE-2022-28987.yaml:92d611061e52d17c2d4a84f263df18cee9afcc2d
@@ -4727,7 +4727,7 @@ http/cves/2023/CVE-2023-38646.yaml:6322856760a1d4255cb1991376fd61f9b7d0ad97
 http/cves/2023/CVE-2023-38875.yaml:668c480f0410c784f23d058e1696e33cf494794b
 http/cves/2023/CVE-2023-38879.yaml:eb9833ce8dbbcaeee0c37e2316f9594047b37c81
 http/cves/2023/CVE-2023-38950.yaml:b51e5b0359ced11a56c1bc781ee288ffc4fa8a75
-http/cves/2023/CVE-2023-38952.yaml:43c7b72c52bafd65ae5544138bf7c25be46488c3
+http/cves/2023/CVE-2023-38952.yaml:dbd6dfb5a864115298db5df40405913501efa27e
 http/cves/2023/CVE-2023-38964.yaml:d95c46e79b0a767fee53e48f930229f8bf93a613
 http/cves/2023/CVE-2023-38992.yaml:e039acb2414d6e4e8437bae0b20f7747a842c94b
 http/cves/2023/CVE-2023-39002.yaml:432a18ab028785e5793750f962e065881131054c
@@ -4767,6 +4767,7 @@ http/cves/2023/CVE-2023-40752.yaml:811198f8fb20e1575c6727fcac76c9a11126805b
 http/cves/2023/CVE-2023-40753.yaml:62c9c40528a03e5e7eaba6702cf81a597bb61eca
 http/cves/2023/CVE-2023-40755.yaml:43f670eef997eac9f93772aac2850f60f426944f
 http/cves/2023/CVE-2023-40779.yaml:9a1b9bc4b1f261319ccb6b90bf812e90b63557a4
+http/cves/2023/CVE-2023-40924.yaml:dd4f4657d614e2cb1b916ddfc2b68c9d3380a04b
 http/cves/2023/CVE-2023-40931.yaml:00272193ec2d6d5067d22f7aca103b6e6a3c30b8
 http/cves/2023/CVE-2023-4110.yaml:3741a04cf89e1ce78eb85cb543a1412258557fc4
 http/cves/2023/CVE-2023-41109.yaml:877c94382c21452e21309834a1ddeef4ac39ee45
@@ -5148,6 +5149,7 @@ http/cves/2024/CVE-2024-2862.yaml:9c31deeebc4752209eddc0df553f9a8923d870c3
 http/cves/2024/CVE-2024-28623.yaml:5895165edbaeff370cd1dd05490879211a95614d
 http/cves/2024/CVE-2024-2863.yaml:8ef3deef3b57d0cbb3c37314920c1d94e50dc9f5
 http/cves/2024/CVE-2024-28734.yaml:243d3fb63fb8db0d620b8d34c9fe2816c2c2cb2d
+http/cves/2024/CVE-2024-28752.yaml:f95b765d5c6890e842449c0e27853d178c10d900
 http/cves/2024/CVE-2024-2876.yaml:213a0b7716595282d6c1024b13bfe0cb30344979
 http/cves/2024/CVE-2024-2879.yaml:e71b1e6947b6c52716a2b4a46fcab8f08a2229b8
 http/cves/2024/CVE-2024-28986.yaml:dfe3107191f3319354fcb0767b56e885b775b407
@@ -5242,7 +5244,7 @@ http/cves/2024/CVE-2024-3552.yaml:fa4ea8a2bfbcf7b61a7cd365ec9478a5211345db
 http/cves/2024/CVE-2024-35584.yaml:3e64063f2df95eb123476a1dbe0bb247c4f48f60
 http/cves/2024/CVE-2024-35627.yaml:a925bd53ee6fa22e046e7855c5fce7f882c4cff0
 http/cves/2024/CVE-2024-35693.yaml:f095eda1541f24760873b3e593a4f1fd6e9c761d
-http/cves/2024/CVE-2024-35694.yaml:a6982f1d40bd26c1791d597a6e65bc59a1577149
+http/cves/2024/CVE-2024-35694.yaml:ae06c691dd53056fc8bb8839b0b5d1a8e57e9f05
 http/cves/2024/CVE-2024-3605.yaml:97d5164b7fc6989a353b1a4a97e0383dcd182743
 http/cves/2024/CVE-2024-36104.yaml:ffcfc38fdbebf2006f8b41fbf2e8c5b784ce61e9
 http/cves/2024/CVE-2024-36117.yaml:d086d5c9190d548c4ebff0b6ef52abefd1ad22dd
@@ -5274,7 +5276,7 @@ http/cves/2024/CVE-2024-38288.yaml:946e1a62b3ba4666817f4a8a5b58c9f08b6c1db8
 http/cves/2024/CVE-2024-38289.yaml:db4931e869c102ac6492edbb7a8015f327672dc1
 http/cves/2024/CVE-2024-38353.yaml:b144a661571c1ecaec10c0c78884c236befaf3c5
 http/cves/2024/CVE-2024-38472.yaml:117419b3d4eeb7b9c9988963c0b135b69250605b
-http/cves/2024/CVE-2024-38473.yaml:a49a6cf469411cab6344fbf80c35e005ce13e233
+http/cves/2024/CVE-2024-38473.yaml:1a7592730f26671fcb14ad62a4dfdfe987a44ef3
 http/cves/2024/CVE-2024-38475.yaml:d0716649dace450f15a9e567c6a117b3a2098a7d
 http/cves/2024/CVE-2024-3848.yaml:d821cd192a5df09ae6ad17d48bd77aaf1cbd6aa9
 http/cves/2024/CVE-2024-3850.yaml:d4b4880f50d36b98e81c824e04c31eb75c759dac
@@ -5922,7 +5924,7 @@ http/cves/2026/CVE-2026-2413.yaml:3649b158ffb2ffe75571404d160ae95599334ec9
 http/cves/2026/CVE-2026-24477.yaml:5ae554fff1cc7efd335899007b6ac61b33efbac6
 http/cves/2026/CVE-2026-25512.yaml:26bcc997f92262b70215464df823b4c0af71091b
 http/cves/2026/CVE-2026-25892.yaml:0d94271b154993c3f786a183f7e58ebb2d6e0c3a
-http/cves/2026/CVE-2026-26980.yaml:2cdbff7880b15c0f11062b24989f278644b69b7e
+http/cves/2026/CVE-2026-26980.yaml:693c5476c1b30fb5b0a858a2cb3d3c0638ca73e3
 http/cves/2026/CVE-2026-27483.yaml:bbbf1de0d80947fcedc573fa3363bc22f058a28e
 http/cves/2026/CVE-2026-27645.yaml:7a8021d7ae13fd160c95ac1e83878c1df474a42c
 http/cves/2026/CVE-2026-27944.yaml:615c4555c977acfc36761c52fa96026fa97bdeeb
@@ -5930,7 +5932,7 @@ http/cves/2026/CVE-2026-27971.yaml:231409bdac51a3088ba98bdd7cc5a9b7e60c5054
 http/cves/2026/CVE-2026-28288.yaml:d0ecdf453b731afb7f2a7ff67df9281eee38acbc
 http/cves/2026/CVE-2026-28358.yaml:761492fac617d6cb6434ace4d18e12cb00363b9f
 http/cves/2026/CVE-2026-28414.yaml:a8704b9acb8c3543f22ca30bb71f232ad87631e2
-http/cves/2026/CVE-2026-29014.yaml:e580c1b99a4e5a0b32c926bf4d5f5484b143e1bb
+http/cves/2026/CVE-2026-29014.yaml:4c279568aeec35aa3838c78961fdfb289d7b4aaf
 http/cves/2026/CVE-2026-29183.yaml:7958796b74ca59b49c24376f2465428a7273db4b
 http/cves/2026/CVE-2026-3055.yaml:05c422ac67ee755bb71022b4bfc8ce902bb047bf
 http/cves/2026/CVE-2026-30928.yaml:7c0eb9435f212d271d1b3b76b0066657669c3e7c
@@ -5968,7 +5970,7 @@ http/default-logins/apache/apache-apollo-default-login.yaml:6ef7ac85a76cc4196b6c
 http/default-logins/apache/apache-hertzbeat-default-login.yaml:3a5da77aaa572de69e2610a65171ca8acfc64ca8
 http/default-logins/apache/apache-inlong-default-login.yaml:55c00d392370b5926d5b5e66d8c34a5a598efb47
 http/default-logins/apache/apache-polaris-default-login.yaml:c94b25047df1c7658502e64a760551e584421425
-http/default-logins/apache/apache-streampark-default-login.yaml:5be0cabbb4b60322db04000e0ca695226f7329a0
+http/default-logins/apache/apache-streampark-default-login.yaml:245efed6cc0e5cff7bb5ace69d7b156e72c76ca6
 http/default-logins/apache/apache-syncope-default-login.yaml:876adabd8b701a954117b8820ec6f8b81624eefd
 http/default-logins/apache/apisix-default-login.yaml:528b989ff28ecb4b3d459fb1caa09bfa66c0e1b1
 http/default-logins/apache/cloudstack-default-login.yaml:6ec0750fe651a03338e2d33379a485b5c6e5ac73
@@ -6003,6 +6005,7 @@ http/default-logins/camunda/camunda-default-login.yaml:e8fee2ad48657e9e9d9d618e9
 http/default-logins/canon/canon-c3325-default-login.yaml:5323486d7c6a4acbb686aaa595eeeed0b2866070
 http/default-logins/caprover/caprover-default-login.yaml:9d45ce0690395dff2bc591e2f3e34e4d3aee10ce
 http/default-logins/casdoor-default-login.yaml:d65d417a107c04cf04f698e7ffa4e3b4fa1bc48c
+http/default-logins/checkmk-default-login.yaml:544df3e10838c3a6d34e222fead3ed89183910d5
 http/default-logins/chinaunicom/chinaunicom-default-login.yaml:a56b488db9c9ec1f2e9fc3ad6d99ef8300028c7c
 http/default-logins/chirpstack/chirpstack-default-login.yaml:871fba59428e6d6041a1a224bf4da0b1506035f2
 http/default-logins/churchcrm/churchcrm-default-login.yaml:8d9413525383dcd24a1ecc1eec6a764eb416d7f3
@@ -6057,6 +6060,7 @@ http/default-logins/google/google-earth-dlogin.yaml:44effffeaae15b3d4634c96e344d
 http/default-logins/gophish/gophish-default-login.yaml:6637b7327c16c315ad8c281678ad822f1cfdaf8f
 http/default-logins/grafana/grafana-default-login.yaml:0735076608ce508c4f2da057c5416a672a6dce0e
 http/default-logins/graylog/graylog-default-login.yaml:f8ceeceed0480671925837eede0f0776e354e0ce
+http/default-logins/graylog-default-login.yaml:1d533ab26805bc99cfff92884cb7cfb180f91d8d
 http/default-logins/grocy/grocy-default-login.yaml:6e5e6311b766fc2c1565ae36ddf75cb819727827
 http/default-logins/guacamole/guacamole-default-login.yaml:19cf4035531d50866cbc06e02e3db20e9c020c4f
 http/default-logins/gude/gude-default-login.yaml:efcc15e811c8cbc0ac4b7f7594fdcfc6a1e2f983
@@ -6198,6 +6202,7 @@ http/default-logins/stackstorm/stackstorm-default-login.yaml:6ebd96c7cb2c584f9e5
 http/default-logins/steve/steve-default-login.yaml:eb4f78aa172e5644314d405615a1f04eed72b419
 http/default-logins/structurizr/structurizr-default-login.yaml:c3424556c37deae18629227080739e5f23b19fd4
 http/default-logins/supermicro/supermicro-default-login.yaml:f9055e9af92ebb2d3ad79d7eb31fa1f1121cff32
+http/default-logins/superset-default-login.yaml:15b9dfeb41b49766dfb876e227da4cd8a5b503c5
 http/default-logins/szhe/szhe-default-login.yaml:e35079c74e849a6d074401824929117460cf59ff
 http/default-logins/timekeeper/timekeeper-default-login.yaml:1d6ce8dc88c774275a3d5542733b38e5aa0a01f8
 http/default-logins/tiny-file-manager-default-login.yaml:ce584c0904fc3c354a3d91aa855f77384eb24473
@@ -6208,7 +6213,7 @@ http/default-logins/tplink/tplink-wR940n-default-login.yaml:ee9e2dd888c590656b56
 http/default-logins/traggo-default-login.yaml:651b6bf62e266c5c7eaa01c22e8758bc416d1231
 http/default-logins/trassir/trassir-default-login.yaml:ad868bbd1dbd526bca0e8c3a628096f905575ee7
 http/default-logins/umami/umami-default-login.yaml:ad30350774dbc30a86db98c3fb2eaacbdcfddecd
-http/default-logins/unify/unify-hipath-default-login.yaml:8724cee505f1ecc9c8025c04087036bfeab884d7
+http/default-logins/unify/unify-hipath-default-login.yaml:29d46ede5d3cf5542569fa317e2b4effc0fe10be
 http/default-logins/versa/versa-default-login.yaml:a7da8c8138b8504eee4b4361094bfc1ec82ce75d
 http/default-logins/versa/versa-flexvnf-default-login.yaml:5c92fa036819d8a715d4553f6cfbbf9faa43f4af
 http/default-logins/vidyo/vidyo-default-login.yaml:426d39fa0b940f8325eff76b1ec59a3fcfa463cc
@@ -8492,6 +8497,7 @@ http/misconfiguration/apc-info.yaml:6dc051ac35daa90bd1440e3d0c65e3f99b607521
 http/misconfiguration/apollo-adminservice-unauth.yaml:a4243a3427518f4f212465143036604e439f7d11
 http/misconfiguration/apple-cups-exposure.yaml:51d5c52459df435b207e00918284f01fed1eaa9e
 http/misconfiguration/application-yaml.yaml:0d531d8efba23ca389e726fc6a6201292667dde0
+http/misconfiguration/argo-workflows-unauth.yaml:620d66ffd1739d5ad3c0c7e3c091d1dd411ad259
 http/misconfiguration/ariang-debug-console.yaml:dc13d2884bf281dc5ba88d45af867ad61c5ad94f
 http/misconfiguration/artifactory-anonymous-deploy.yaml:f298c7a626a564f339ede018f2b9f433772ecb5a
 http/misconfiguration/aspx-debug-mode.yaml:eb4acc5ae9a0e18c77a69cb9c215c7014b847b84
@@ -8509,6 +8515,8 @@ http/misconfiguration/bitbucket-public-repository.yaml:369cf8aa2b9318e3cbc636515
 http/misconfiguration/bitrix-fpd.yaml:f86d94f3f561d6fc381fba778a638a71124d516f
 http/misconfiguration/blackbox-exporter-exposure.yaml:15c8abcdaabb5d11413f3f907672837018f32a04
 http/misconfiguration/blackbox-exporter-metrics.yaml:f96f10e0334007cf5a7d45232dbdefad71b4d714
+http/misconfiguration/blockchain-rpc-debug-exposure.yaml:7c85eff884faa637fe6a99a04df8f7a869d11f94
+http/misconfiguration/blockchain-rpc-txpool-exposed.yaml:ad79d44e3b4554e35933fa6f24332737239451b1
 http/misconfiguration/bootstrap-admin-panel-template.yaml:692d640538f54d82870cd4abe6bd3e426182fee1
 http/misconfiguration/bravia-signage.yaml:2850c3ec57cf4cb3583c677b10edd10f3596842a
 http/misconfiguration/brickcom-camera-unauth-snapshot.yaml:ce6a91500a488c982a6b8a0b1d65015e2a65caa5
@@ -8982,6 +8990,7 @@ http/misconfiguration/nocodb-public-registration-enabled.yaml:8fbefb8bb11e4ed6c4
 http/misconfiguration/node-exporter-metrics.yaml:d0d22b7c93d781402503fb8944ff2c0cc2d3641f
 http/misconfiguration/node-express-dev-env.yaml:c8fb2fa700fe7dc63e85ce7691a02222d7bf89b5
 http/misconfiguration/node-express-status.yaml:206446433a734c0b33e998f2fc3b9d2c3fe3cdbd
+http/misconfiguration/node-red-unauth.yaml:1dca49ec8e0e7eb581dbe5d4d1aee39870d79cfa
 http/misconfiguration/nomad-jobs.yaml:3dd5f53aa8f1ee257f7156360403e90e32f4a83d
 http/misconfiguration/ntfy-web-exposure.yaml:9522c2e4a394e3176aa83d134bed105de3d6e73f
 http/misconfiguration/ntop-panel-exposed.yaml:29372fc2141bddb91cc5e2cebe446f1e68137601
@@ -8995,6 +9004,7 @@ http/misconfiguration/openbmcs/openbmcs-ssrf.yaml:e18432bafc3d167e8cf73d88a37546
 http/misconfiguration/opennms-dashboard-exposure.yaml:5f587a646891300409df0e1765c3cc42ece823d8
 http/misconfiguration/opensearch-dashboard-unauth.yaml:f4a37543aef0fe06dbfd0b7eef083d42c37f71a9
 http/misconfiguration/openstack-config.yaml:6e90e3047989e399c45a919be2ef3e9f9f00bb1c
+http/misconfiguration/opentext-filr-guest-access.yaml:7bd102dfc698e9a53b459ef29beae2109b0131f3
 http/misconfiguration/oracle-reports-services.yaml:c6b845b129078e6fd23f6c5eb0c0d98c636d38b0
 http/misconfiguration/pa11y-dashboard.yaml:01c9fbe821a30962057bc8a86b42b142986ef46f
 http/misconfiguration/pcdn-cache-node.yaml:2a0314e9eb692f55fd8beb736464b921724eed69
@@ -10502,7 +10512,7 @@ http/takeovers/worksites-takeover.yaml:cfbc9d3c9ce608ee3ee2da22c1374e98e3049f67
 http/takeovers/wufoo-takeover.yaml:f8a9a319ced715624733d5e3f9d4b9118435eda9
 http/takeovers/zendesk-takeover.yaml:c403eb4498f653144faa5732cad101b133fff22a
 http/technologies/4D-detect.yaml:3c8f4db2b71c9e3b5ccc967b4f42084aec679f9f
-http/technologies/Wix-detect.yaml:9b2ae117e581e48b4fdee19e5c92f9cf5f3a43ce
+http/technologies/Wix-detect.yaml:b249a0efa729cf6f0363a02ae56aab34af84c15f
 http/technologies/a-blog-cms-detect.yaml:8d8e9022572551edcecfaabf5727460787e23e51
 http/technologies/abyss-web-server.yaml:4440a8298fb398d8a73aa1ce2d83eb353c8279a2
 http/technologies/accellion-detect.yaml:b58b91bcff370a96d5e76e0958234ec1bf3c6e09
@@ -10546,7 +10556,7 @@ http/technologies/apache/apache-ofbiz-detect.yaml:e2c505b59f526f282dc4bcf40f2aff
 http/technologies/apache/apache-ozone-detect.yaml:4846c6869a5410e7b8565f658593fb3a1d0a3c95
 http/technologies/apache/apache-pinot-detect.yaml:bde2cdb69514c02d155ba83d552ac7d3868ce45c
 http/technologies/apache/apache-shenyu-detect.yaml:b01c81d5f1438dd1f8c1f10f59ee0da4f827eb6f
-http/technologies/apache/apache-streampark-detect.yaml:0ef11b1fab8f44e53cb4ea8b1a378e419f02350c
+http/technologies/apache/apache-streampark-detect.yaml:04e41468eb66eb763a4e3ba4bba3e09b51c242ce
 http/technologies/apache/apache-streampipes-detect.yaml:46968f42ab371deeb4ba86c85e4519da053e477d
 http/technologies/apache/apache-syncope-detect.yaml:612a12238e5d0acb8541bc462325fed1fcb1e464
 http/technologies/apache/apache-tapestry-detect.yaml:962b44bcb55e720187687a2b5610cce7dddc9a96
@@ -10588,13 +10598,13 @@ http/technologies/bentoml-detect.yaml:ef5269be561f1d951044c24a3966b4f06bdc41f9
 http/technologies/besu-server-detect.yaml:6330ba1a232473fe80745e1672782205db8d2ae3
 http/technologies/beyondtrust-remotesupport-version.yaml:9d0d3cd36ae4f534015386bd8f774237002a97ff
 http/technologies/bigbluebutton-detect.yaml:39589e3563e42cd9e405b82e5cf14fa850d18785
-http/technologies/bigcommerce-detect.yaml:62b7cad1c329f19c562715af3a309a48d8958d69
+http/technologies/bigcommerce-detect.yaml:a14dd3e5aca69fff7c0a34f3f3dc3ed0089703f2
 http/technologies/bigip-apm-detect.yaml:6ae504dd2cc7a279ecf40298489dc220f5919d6e
 http/technologies/bigip-config-utility-detect.yaml:2182a560915d63d0fd9433e4cd6d831d408f74c8
 http/technologies/bigip-detect.yaml:6ddcda3de1931e684206c71f29554f2f099aeb04
-http/technologies/bitrix-detect.yaml:c45d50d106740d27d03c68734050aa8973005b1a
+http/technologies/bitrix-detect.yaml:5f5bddec05df036f093c68f031cc5bd0173d238a
 http/technologies/blazor-webassembly-detect.yaml:19fe6b27e2bb00f9f825b2ff7d989c0c94ddabfd
-http/technologies/blogger-detect.yaml:8077819b9835aadb6db5e84d62ea8071e2f9b60d
+http/technologies/blogger-detect.yaml:ec0c222b575880447305864766f504b9530f6e6d
 http/technologies/boa-web-server.yaml:2703ba7f93954b19db6cfd931d45d6a11c987679
 http/technologies/bugzilla-detect.yaml:c66b35cd18c0695954acf2e337f67a5af4018aa5
 http/technologies/bulma-detect.yaml:cdcf1b4423113c0f33f38fdde6c0ba89780a0256
@@ -10622,7 +10632,7 @@ http/technologies/cobbler-version.yaml:e7f2c3fc4b1e2ab3c0d2153369a36ad92a576ff8
 http/technologies/cockpit-detect.yaml:7d2893247dbcbdfbf743d45dec00b9ff654a401f
 http/technologies/comfyui-detect.yaml:a69c48dce27a8eeb6c00f4392496c259f70bb15c
 http/technologies/coming-soon-page-detect.yaml:6ee26a907f03d3a502cd45773e6b8bb278d3d840
-http/technologies/concrete5-detect.yaml:5093ef921de0af5f02f99be3a5720102d8c69e67
+http/technologies/concrete5-detect.yaml:268ac22b42cf641312e5a166d5a0b2b818368fb6
 http/technologies/confluence-detect.yaml:e8c385e5422f5fe9d41039ee6d4517b9e93e7874
 http/technologies/connectwise-control-detect.yaml:1c693616034db1fc9304127b48e7e79a28ebb3a5
 http/technologies/couchbase-sync-gateway.yaml:9d1b9756380f6b6b1556bebd58206369ab9550cf
@@ -10675,7 +10685,7 @@ http/technologies/detect-sentry.yaml:6069825ee320b2dccf695f2efded38facd1cc900
 http/technologies/devexpress-detect.yaml:007018e5c10a226abd5414ae5ff171b19a6bf2dd
 http/technologies/directus-detect.yaml:0118f039bfba5870e93ffe715c4012321877ca31
 http/technologies/dizquetv-detect.yaml:984cf7d69fe9fd185921af431615e1c566852016
-http/technologies/django-detect.yaml:38ac1b7deecef4b5db3f7cbb5d73e4465c4dfa1e
+http/technologies/django-detect.yaml:b40ba4bc7738b6e53ea7ba44669f91276a7694d8
 http/technologies/dkron-detect.yaml:8342b97b8d4e1f70c06f46102335c7fd10ef2e4d
 http/technologies/docker-registry-browser-detect.yaml:d1587fc1ec9e8b68facf1611230137463df6fdde
 http/technologies/domibus-detect.yaml:63245d045b895e8ffedfbae2d1ee95b5312c9262
@@ -10708,7 +10718,7 @@ http/technologies/eol/wordpress-eol.yaml:3ffe5483f44ffc4a7ae29d0864f9c381f82c0f1
 http/technologies/erigon-server-detect.yaml:6871b3112300739afb2b0622fccb18f3318f84a4
 http/technologies/erxes-detect.yaml:a911bf4631e6d9315ea5f2d934c645d56970c32a
 http/technologies/express-default-page.yaml:08a1ba00445e3d79c9cff527dee54f8464088eb5
-http/technologies/expressionengine-detect.yaml:51ed8cb2c506fa01b1e27dd64186412d8629c465
+http/technologies/expressionengine-detect.yaml:5a96367fa86809b9c926543f29a8e386d262ab18
 http/technologies/eyesofnetwork-detect.yaml:7ca407008286f5e9a3b3d9d9610a4ad44cae87e9
 http/technologies/fanruanoa-detect.yaml:8c39a13790d38897e3df01a8dbac102e5be15b8e
 http/technologies/fanruanoa2012-detect.yaml:5d67d9c6c7b77643d54a49a25f9ae13e8cb5fe5b
@@ -10718,7 +10728,7 @@ http/technologies/favicon-detect.yaml:5295c9f6c2ebff724f50082d3ebe90dbb3cc1f05
 http/technologies/feast-detect.yaml:99c14910cf058c2c8ac8097e654c04d47bb952e5
 http/technologies/fingerprinthub-web-fingerprints.yaml:dbd74267862ddca56310eb6b3152a801aaf3f494
 http/technologies/firstpromoter-detect.yaml:90135303a4ae53ecf3efedc2c78767ce00c71b09
-http/technologies/flask-detect.yaml:116bbb0935dbeded9f9ba54295b84b27e636abb5
+http/technologies/flask-detect.yaml:29dd2576d36e6eff5b5548642e9d2e5d0b5a97b0
 http/technologies/flower-detect.yaml:fd76067eb289b37d901f5eb5e09e29a2a79ba2cf
 http/technologies/flowweb-detect.yaml:643a9f1dc9286421c9f73d7fb92f2a880b392a72
 http/technologies/flutter-web-detect.yaml:b60b1d7f8e0a7fe3a8cfc1741a2b2ce70286ff3e
@@ -10878,7 +10888,7 @@ http/technologies/meshery-detect.yaml:740847b0836dcb0f1880e80c15cac792daff1f84
 http/technologies/metatag-cms.yaml:84529df4aceb9fbaec73d76ece60ad22aef83516
 http/technologies/meteobridge-detect.yaml:d8bb9215b6092c1b1b1eca89764581700c1ed7cd
 http/technologies/meteor-detect.yaml:fd1d280d8eef1457074a4eb1f5a049cf1d224763
-http/technologies/mezzanine-cms-detect.yaml:24233437d5e794ca46d3af966e9931b978baf16e
+http/technologies/mezzanine-cms-detect.yaml:bdd2c63fe9ef7514cb9e8275b91344e827d7b667
 http/technologies/microfocus-iprint-detect.yaml:9a8783354191998ed777a36c63a132347727805c
 http/technologies/microsoft/aspnet-version-detect.yaml:ec753de82fb78e3ff7bb92184660ae3f43a156be
 http/technologies/microsoft/aspnetmvc-version-disclosure.yaml:fc12b8f0462d1768eac8037563ebf329f2ebfc47
@@ -10943,7 +10953,7 @@ http/technologies/open-journal-systems.yaml:1e663242a64946a48ac8c9705c7cb2fbf4e6
 http/technologies/open-virtualization-manager-detect.yaml:a319c7f0d932643d6c2715064b8428518d5dce06
 http/technologies/openai-plugin.yaml:73d148b01d293ecc5ccdd99199d8029a6b30276d
 http/technologies/openarchives-detect.yaml:231fb1762d0cf3ce33c49521deadc9dd0bc365b6
-http/technologies/opencart-detect.yaml:6e36d3320d1f793ab35f86a72147ce0ef9050f00
+http/technologies/opencart-detect.yaml:73c352425ca54251b721bcbcfff70bb6bd4fb297
 http/technologies/openethereum-server-detect.yaml:2882b49ec36f8864df7fcf48fe9bce312214861c
 http/technologies/openhap-detect.yaml:e74df4a435ac5fbcdce86ccbbec891aa1e84da0f
 http/technologies/openmetadata-detect.yaml:9e4a0a09d47119ee16b78142d9a954bc0764e90a
@@ -10964,7 +10974,7 @@ http/technologies/oracle/oracle-webcenter-sites.yaml:3b6caadb7f84c66873efadf7a3a
 http/technologies/oracle-fusion-detect.yaml:699c4a640bd367db1a792fdf14d873a443b5c05a
 http/technologies/oracle-httpserver-12c.yaml:50d6b030bb20199bbe2778b45e8a40c69b4e1f3a
 http/technologies/orbit-telephone-detect.yaml:8e4e84d00ffebc9188d94a69b3b858e80b86f1ea
-http/technologies/oscommerce-detect.yaml:325233e3a96e68f2e7cec857f613f4ebb5716a84
+http/technologies/oscommerce-detect.yaml:796bf461448fea9c9412852b2c0348b477e859af
 http/technologies/osquery-fleet-detect.yaml:be86307046219177d8db20f40435bc6da38f005b
 http/technologies/owasp-juice-shop-detected.yaml:33f485a6cce304bb9a0b58ed269a35feb7673887
 http/technologies/pagespeed-detect.yaml:e72bc87af79b9fa8bbe43ba5cce11884d27a4601
@@ -11026,11 +11036,11 @@ http/technologies/semantic-ui-detect.yaml:0463dce95166130862d27d696578bd6fd0ac2f
 http/technologies/sharefile-storage-server.yaml:bcdfd951cd373e3466ca046ee947be0b08b480aa
 http/technologies/shibboleth-detect.yaml:bbe97c259297748491dd2437075385c6c1ae34d8
 http/technologies/shiro-detect.yaml:217b935b5d88e45ec36d217bacca4bc6279bb6d6
-http/technologies/shopify-detect.yaml:f81acfa030c9f02d136160640f032985c7bc7cba
+http/technologies/shopify-detect.yaml:93f49e7fd441f92e898b48c0a000431a5b4865ec
 http/technologies/shopizer-detect.yaml:50a4b898d79fc654d39b05879258547ca9199397
 http/technologies/shopware-detect.yaml:83f3f9e86b2ee7fe7decec4eab69aa47c425ff13
 http/technologies/silverback-detect.yaml:8fe98c4b10e00ca540c9c653c3037d895df578bf
-http/technologies/silverstripe-detect.yaml:0bd701752f33a7785a0f3aa0ec6f81db96bb7479
+http/technologies/silverstripe-detect.yaml:805b68c609a3770ddda35cf0c23552370a823a02
 http/technologies/simplesamlphp-detect.yaml:d4418f7c834c48034c81e8c76717824ddb60dc08
 http/technologies/sitecore-cms.yaml:e87a21b7de84f581909c0e4866ccd1b5d02fc8bb
 http/technologies/sitecore-version.yaml:f0f6187edf6d94420ab5957051a689275d02ba8a
@@ -11048,7 +11058,7 @@ http/technologies/splunkhec-detect.yaml:1bcb4b74ac8f24d349b717a15de1600cc46e99e6
 http/technologies/spring-detect.yaml:2a95241f7601af65fdb8a6c9a4e623acbd5306e9
 http/technologies/springboot-actuator.yaml:78276bfc31786294a3e23ab0eb2221d25c078fbd
 http/technologies/springboot-whitelabel.yaml:7b32dd9702d2851bb6b033a1877018815fbea2b3
-http/technologies/squarespace-detect.yaml:331f8cd659ea791e1d2e33e661d8326d3f573424
+http/technologies/squarespace-detect.yaml:0db538efddc02368335471ef1c8d956136c2fcb5
 http/technologies/statamic-detect.yaml:31841b400cc9ecf84c5cbc16e0709bdba8261ad1
 http/technologies/stirling-pdf-detect.yaml:cd27edeca66dff87e9cbcd1f273d7b184be26ae3
 http/technologies/strapi-cms-detect.yaml:99dd41e37162bf030a7ec27cb517c7fdcd8b3d0e
@@ -11102,7 +11112,7 @@ http/technologies/web-suite-detect.yaml:ff4fcd3ec9ebe554a6b958804997c66a32cb81af
 http/technologies/weblogic-detect.yaml:613cd97695bd53f24ba579476cb637f8b8afc256
 http/technologies/websphere-detect.yaml:a0478e2daccc3bcac25d6470ad1402db7e004e0e
 http/technologies/webswing-api-version-detect.yaml:74d29634ba08dec096e81de799cbd6660ae1a99e
-http/technologies/weebly-detect.yaml:37355b9166d5a753c3bac6d1408a6c56c3bda8bd
+http/technologies/weebly-detect.yaml:82aeb3be8cdab7243f637c2c35a976b44eb3e629
 http/technologies/werkzeug-debugger-detect.yaml:9587f4bd8005575945a27aef642788e95770714f
 http/technologies/wiki-js-detect.yaml:e251c27783efc3e0dea381990e1a63d39190a2d8
 http/technologies/windows-communication-foundation-detect.yaml:eb84d26b9893302580ad295cdd396ea9295a39fe
@@ -12540,7 +12550,7 @@ http/vulnerabilities/yonyou/yonyou-nc-baseapp-deserialization.yaml:88518c9ca3a36
 http/vulnerabilities/yonyou/yonyou-nc-dispatcher-fileupload.yaml:35bd482d745f5f773ef6dce16faf7c73eb51c2e3
 http/vulnerabilities/yonyou/yonyou-nc-grouptemplet-fileupload.yaml:dfff98d2e6a550f2a57882f376a0bc1d65416d73
 http/vulnerabilities/yonyou/yonyou-nc-info-leak.yaml:03d9adb72a783690b55b3a77f42eeb6751c362a2
-http/vulnerabilities/yonyou/yonyou-nc-lfi.yaml:548ec1a817401d1fa44e98801159362eec4ae416
+http/vulnerabilities/yonyou/yonyou-nc-lfi.yaml:f9e5195710a70ffe6bd5cacdb4ae932b07dd9d47
 http/vulnerabilities/yonyou/yonyou-nc-ncmessageservlet-rce.yaml:4c2080417a73e529187c4fceb76f7eb2d226105d
 http/vulnerabilities/yonyou/yonyou-u8-crm-fileupload.yaml:868a6d841bb8f852c9ef93d298a1b1d1efac6447
 http/vulnerabilities/yonyou/yonyou-u8-crm-lfi.yaml:ef445da872245ebc6568826f1daffab42eca25df
@@ -12723,7 +12733,7 @@ network/cves/2024/CVE-2024-23108.yaml:abacfa021c269344ed359356e9013c43e4b701b3
 network/cves/2024/CVE-2024-48208.yaml:cdb79c8bd943acb671182a988239ba95f454383d
 network/cves/2024/CVE-2024-48651.yaml:bc082d0ee4f687a5f8fbacd95bbe002876f3ac75
 network/cves/2025/CVE-2025-25256.yaml:a4804cb43dbcffa825293082b72146ab54abe593
-network/cves/2025/CVE-2025-47188.yaml:1fcdbafd29667b0bb499cd63faa21d62775d068d
+network/cves/2025/CVE-2025-47188.yaml:85f7d9aee5226a6858cd4b8784ffe6b76fcccc1a
 network/cves/2025/CVE-2025-8286.yaml:4136859a481c2fbfbada726f8c38a9c690cb88ef
 network/cves/2026/CVE-2026-23829.yaml:91ce9b37434d256515267f3995630938b62d2b54
 network/default-login/ftp-anonymous-login.yaml:b3ce894a445a6a707e741b52dd21a5cf9e02cd15
@@ -12736,7 +12746,7 @@ network/detection/apache-activemq-detect.yaml:5968bca916f51cee726bf38627a1be2012
 network/detection/aws-sftp-detect.yaml:1e24d4c6755c90a1b14af84e39214fe55bc6cc0d
 network/detection/axigen-mail-server-detect.yaml:07a773547d3c6db2d8dd6772b2ea7d3d263a7bc7
 network/detection/bgp-detect.yaml:8ab76a2fe55e10e4ed48a3381df8bc6d10d841f4
-network/detection/bitvise-ssh-detect.yaml:c2037fed36e48bcf1ab2ad0ce3f7286922be6da5
+network/detection/bitvise-ssh-detect.yaml:ac2aa9eeab651f6e8cd61a270b8feb84fcd711d1
 network/detection/bluecoat-telnet-proxy-detect.yaml:3ce74353f11c6d56ae076fd7c232bab090ab4958
 network/detection/cisco-finger-detect.yaml:df95fd48618189f29e8afc93f76f10bcb89a1cf8
 network/detection/clamav-detect.yaml:0bf80374f22f1242bce51e4a9be69ca636c75ae4
@@ -12872,7 +12882,7 @@ network/detection/starttls-mail-detect.yaml:8d31ada78ef30202fae8751cdaa9422392f2
 network/detection/teamspeak3-detect.yaml:e6c560d48afcc0fbd7696e68cce13a0f3a465c8c
 network/detection/telnet-detect.yaml:0bacd4d2ee361018775bfc68e4a0ff6b41314464
 network/detection/totemomail-smtp-detect.yaml:1d903fddfffb12ffdeec7c4f4f91076f0e2b0295
-network/detection/unauth-java-message-broker-detect.yaml:c5bfbd12b55dd2e77a8d09c27fdaffa7c73fbeae
+network/detection/unauth-java-message-broker-detect.yaml:ed6c3a2c408ee3f07cfc982d0da1c0500133753b
 network/detection/vmware-authentication-daemon-detect.yaml:750589bde6c858ae33daf9ba5616c9f96b72476f
 network/detection/vnc-service-detect.yaml:4e32e5537b5abf51cac12d42260d3382fed8e025
 network/detection/vtun-server.yaml:bf93f133d4a1037d2adffc99b449bcf3b48f7f06
@@ -13000,7 +13010,7 @@ ssl/tls-version.yaml:396e167fe4dc47cc31a3823287f767ac4ba3ed6d
 ssl/untrusted-root-certificate.yaml:bc78917f6ed97df44ec66fd168e6d3d51f2050a9
 ssl/weak-cipher-suites.yaml:a2c5b71896965bcbb458e1d2a5bcf54981301156
 ssl/wildcard-tls.yaml:93487bb9d9c28bf84ae1928887b0dafef67b4117
-templates-checksum.txt:c87f44842deea6da68fe94c9c1ecbcad6219f6c4
+templates-checksum.txt:bf88e28ef3b79cdd982eadc623e8d929525ec99e
 workflows/74cms-workflow.yaml:bb010e767ad32b906153e36ea618be545b4e22d0
 workflows/acrolinx-workflow.yaml:8434089bb55dec3d7b2ebc6a6f340e73382dd0c4
 workflows/activemq-workflow.yaml:20eb2f6dea0ca25d1bd556b5a63e5f25686f2376
