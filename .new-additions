@@ -27,6 +27,7 @@ http/cves/2026/CVE-2026-34197.yaml
 http/cves/2026/CVE-2026-34453.yaml
 http/cves/2026/CVE-2026-34605.yaml
 http/cves/2026/CVE-2026-34885.yaml
+http/cves/2026/CVE-2026-35616.yaml
 http/cves/2026/CVE-2026-39364.yaml
 http/cves/2026/CVE-2026-39365.yaml
 http/cves/2026/CVE-2026-4020.yaml
@@ -60,6 +61,7 @@ http/misconfiguration/piwik/piwik-unauthenticated-access.yaml
 http/misconfiguration/sabnzbd/sabnzbd-unauth-access.yaml
 http/misconfiguration/weak-hsts-detect.yaml
 http/technologies/apache/apache-sling-detect.yaml
+http/technologies/nicegui-detect.yaml
 http/vulnerabilities/magento/magento-polyshell-rce.yaml
 http/vulnerabilities/other/marimo-proxy-abuse.yaml
 javascript/cves/2026/CVE-2026-39987.yaml
