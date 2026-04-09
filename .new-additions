@@ -3,17 +3,23 @@ http/cves/2022/CVE-2022-41678.yaml
 http/cves/2023/CVE-2023-40924.yaml
 http/cves/2023/CVE-2023-49293.yaml
 http/cves/2023/CVE-2023-6592.yaml
+http/cves/2023/CVE-2023-6750.yaml
+http/cves/2023/CVE-2023-6825.yaml
 http/cves/2023/CVE-2023-7165.yaml
 http/cves/2024/CVE-2024-28752.yaml
 http/cves/2024/CVE-2024-49357.yaml
 http/cves/2024/CVE-2024-8252.yaml
 http/cves/2025/CVE-2025-12536.yaml
+http/cves/2025/CVE-2025-14340.yaml
+http/cves/2025/CVE-2025-2558.yaml
 http/cves/2025/CVE-2025-50578.yaml
 http/cves/2025/CVE-2025-53533.yaml
 http/cves/2025/CVE-2025-54597.yaml
+http/cves/2025/CVE-2025-55150.yaml
 http/cves/2025/CVE-2025-59528.yaml
 http/cves/2025/CVE-2025-64500.yaml
 http/cves/2026/CVE-2026-21643.yaml
+http/cves/2026/CVE-2026-25616.yaml
 http/cves/2026/CVE-2026-26980.yaml
 http/cves/2026/CVE-2026-2699.yaml
 http/cves/2026/CVE-2026-28358.yaml
@@ -48,6 +54,7 @@ http/default-logins/owncast-default-login.yaml
 http/default-logins/superset-default-login.yaml
 http/exposed-panels/openclaw-control-detect.yaml
 http/misconfiguration/argo-workflows-unauth.yaml
+http/misconfiguration/baget-exposure.yaml
 http/misconfiguration/blockchain-rpc-debug-exposure.yaml
 http/misconfiguration/blockchain-rpc-txpool-exposed.yaml
 http/misconfiguration/glitchtip/glitchtip-public-signup.yaml
@@ -68,4 +75,5 @@ http/technologies/nicegui-detect.yaml
 http/vulnerabilities/chanjet-tplus/chanjet-crm-sqli.yaml
 http/vulnerabilities/magento/magento-polyshell-rce.yaml
 http/vulnerabilities/other/marimo-proxy-abuse.yaml
+http/vulnerabilities/other/zqnb-educationcloud-exposure.yaml
 javascript/cves/2026/CVE-2026-39987.yaml
