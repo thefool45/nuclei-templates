@@ -53,7 +53,9 @@ http/default-logins/mirth/mirth-connect-default-login.yaml
 http/default-logins/netbox/netbox-default-login.yaml
 http/default-logins/owncast-default-login.yaml
 http/default-logins/superset-default-login.yaml
+http/exposed-panels/devtron-panel.yaml
 http/exposed-panels/openclaw-control-detect.yaml
+http/exposures/configs/devtron-env-config-js.yaml
 http/misconfiguration/argo-workflows-unauth.yaml
 http/misconfiguration/baget-exposure.yaml
 http/misconfiguration/blockchain-rpc-debug-exposure.yaml
