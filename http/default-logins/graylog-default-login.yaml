@@ -2,7 +2,7 @@ id: graylog-default-login
 
 info:
   name: Graylog - Default Login
-  author: PentesterTN
+  author: 0xBassia
   severity: high
   description: |
     Graylog instance is accessible with default admin credentials (admin/admin). This provides full administrative access to the log management platform, including the ability to read all ingested logs, create inputs, configure pipelines, and manage users.
@@ -46,4 +46,4 @@ http:
       - type: status
         status:
           - 200
-# digest: 4b0a00483046022100863d2900e9cd4e7837e54f808e7fc891351edcde093ffb1e0f3d28e44cdd12eb022100fc83ce2073fbbf50e0aa0305c993fa16d2a2344c70b99372a8f22d2284832b36:922c64590222798bb761d5b6d8e72950
+# digest: 490a0046304402207024dd2cb0e02f2dd294e4362faca52466cef2fee24f0cded0f6ded7e72542330220769fbc001563c7587567588ebc7dc4e5927e07530f518df50d1801cbb6383fa5:922c64590222798bb761d5b6d8e72950
