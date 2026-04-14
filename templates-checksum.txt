@@ -5569,7 +5569,7 @@ http/cves/2025/CVE-2025-1035.yaml:13f1daf73ee3b4d9ee79c5f03285a78d44786140
 http/cves/2025/CVE-2025-10353.yaml:42d4ce3d58185c44c06aee68580af9d51f869feb
 http/cves/2025/CVE-2025-1097.yaml:39700b710af2659f7b671b2b4a167b93e406f01b
 http/cves/2025/CVE-2025-1098.yaml:af5a9ba83acb3236d09c317e7f74f198290c46f7
-http/cves/2025/CVE-2025-11307.yaml:9e3b65b5d15428b54d4b8adfc3405021432d1a6c
+http/cves/2025/CVE-2025-11307.yaml:9bd8bf010f15577757662b2de09911e4b69cd7f8
 http/cves/2025/CVE-2025-11368.yaml:32d9c7007347b7696a47ad67f657dd452800d464
 http/cves/2025/CVE-2025-11371.yaml:78527ac61b0b230d81d66267b76e09da0c5222b0
 http/cves/2025/CVE-2025-11580.yaml:3686bb8490cdbbacd76b6ad6d9edb499a1786f86
@@ -5966,6 +5966,7 @@ http/cves/2026/CVE-2026-32583.yaml:82c7d8ce08754778931b32593f873a0eb159e7a3
 http/cves/2026/CVE-2026-32596.yaml:6789f7dbd7b31ad41ed593fbd736b53a3159fefd
 http/cves/2026/CVE-2026-33478.yaml:aa6c7fa4c79c31ab8272048a65b1ef5b196c3a7f
 http/cves/2026/CVE-2026-33868.yaml:f8c541e8387562448463e8434bfaaa429580aa9e
+http/cves/2026/CVE-2026-3396.yaml:90a147f35762bf2760c2b07e54703dff6db2c48f
 http/cves/2026/CVE-2026-34156.yaml:2e029a268f2ca6cb49c335f63f6a8d7a8e50ee55
 http/cves/2026/CVE-2026-34197.yaml:6fdb287ade975503f58e221ea428b05324f15e18
 http/cves/2026/CVE-2026-34453.yaml:6764f239903acb754656cbf45216186c99c87418
@@ -5979,6 +5980,7 @@ http/cves/2026/CVE-2026-4020.yaml:05e82480d38d0a8fa8421df46b32f000e08a221e
 http/cves/2026/CVE-2026-4106.yaml:a5bd90c81fe723db8cf261641a8080891ecb8c83
 http/cves/2026/CVE-2026-4257.yaml:d1e56dbdb334540f9b52059797ec60eaf7fcae03
 http/cves/2026/CVE-2026-5615.yaml:033b8c39ca834d8b52f4c967df67a9d223f98724
+http/cves/2026/CVE-2026-6203.yaml:411ecbf08738e59218dd6dacc380c8e823ffc412
 http/default-logins/3com/3Com-wireless-default-login.yaml:2a19d1d409fb70dfbc3aa3fa666a66ae520b9030
 http/default-logins/3com/3com-nj2000-default-login.yaml:ce36ab3f28749844fdcb22cb901ad41bd69694b3
 http/default-logins/3ware-default-login.yaml:ad4e4b4987d95c6a88c82550a5c8a550b34b103c
@@ -13078,7 +13080,7 @@ ssl/tls-version.yaml:396e167fe4dc47cc31a3823287f767ac4ba3ed6d
 ssl/untrusted-root-certificate.yaml:bc78917f6ed97df44ec66fd168e6d3d51f2050a9
 ssl/weak-cipher-suites.yaml:a2c5b71896965bcbb458e1d2a5bcf54981301156
 ssl/wildcard-tls.yaml:93487bb9d9c28bf84ae1928887b0dafef67b4117
-templates-checksum.txt:0951a4dcec596291cba6ae34fca15d9af329768d
+templates-checksum.txt:920f4f78960a02b899f74f9f14174828dbf4a4e2
 workflows/74cms-workflow.yaml:bb010e767ad32b906153e36ea618be545b4e22d0
 workflows/acrolinx-workflow.yaml:8434089bb55dec3d7b2ebc6a6f340e73382dd0c4
 workflows/activemq-workflow.yaml:20eb2f6dea0ca25d1bd556b5a63e5f25686f2376
