@@ -10,6 +10,8 @@ info:
     Successful exploitation allows attackers to access sensitive files and information stored on the server.
   reference:
     - https://github.com/szjr123/Target-practice/blob/05ed667090d8040a09235826f7698ff5347a93cf/%E7%94%A8%E5%8F%8BOA/NC%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E8%AF%BB%E5%8F%96_DocServlet/yongyou_read.py
+  classification:
+    cwe-id: CWE-22,CWE-73
   metadata:
     verified: true
     max-request: 1
@@ -33,4 +35,4 @@ http:
           - 'contains(content_type, "application/xml")'
           - 'contains_all(body, "<web-app", "<?xml version")'
         condition: and
-# digest: 490a0046304402204ebb3c257b956b86946ae61450121cbc1268998ac7da91ca8d62c223e4d7bb640220398b21b22e5667944d41217beadc8be7b9e95066752aa348b438b2a72bb049a4:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a0047304502210087ef8c0f88a012a174ad15a847a742cf7b7f3d174ae01c455f477243be2806ce02200d7f879af651fb82d67fb2ba192efc40582e8ba0afb54a312cfac4d48ca2b84e:922c64590222798bb761d5b6d8e72950
