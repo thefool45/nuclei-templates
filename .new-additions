@@ -10,6 +10,7 @@ http/cves/2025/CVE-2025-59342.yaml
 http/cves/2025/CVE-2025-69411.yaml
 http/cves/2026/CVE-2026-21484.yaml
 http/cves/2026/CVE-2026-24423.yaml
+http/cves/2026/CVE-2026-27174.yaml
 http/cves/2026/CVE-2026-33032.yaml
 http/cves/2026/CVE-2026-33439.yaml
 http/cves/2026/CVE-2026-40242.yaml
@@ -26,6 +27,7 @@ http/misconfiguration/chainlit-unauth-access.yaml
 http/misconfiguration/installer/chatwoot-installer.yaml
 http/misconfiguration/installer/chromadb-installer.yaml
 http/misconfiguration/installer/krayin-installer.yaml
+http/misconfiguration/wordpress/download-monitor-unauth-log-export.yaml
 http/technologies/browserless-swagger-detect.yaml
 http/technologies/inertiajs-detect.yaml
 http/technologies/nginx-opencloudos-test-page.yaml
@@ -33,3 +35,4 @@ http/technologies/vendure-detect.yaml
 http/vulnerabilities/other/odoo-login-redirect.yaml
 http/vulnerabilities/retool/retool-postmessage-xss.yaml
 javascript/cves/2026/CVE-2026-39363.yaml
+javascript/udp/misconfiguration/mdns-ptzoptics-detect.yaml
