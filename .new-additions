@@ -17,6 +17,7 @@ http/cves/2026/CVE-2026-4631.yaml
 http/default-logins/avaya-phone-default-login.yaml
 http/exposed-panels/fortisandbox-panel.yaml
 http/exposures/apis/chroma-api-exposure.yaml
+http/exposures/configs/prisma-schema-exposure.yaml
 http/misconfiguration/apache/apache-skywalking-dashboard.yaml
 http/misconfiguration/chainlit-unauth-access.yaml
 http/misconfiguration/installer/chatwoot-installer.yaml
