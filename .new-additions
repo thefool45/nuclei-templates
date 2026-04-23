@@ -28,6 +28,7 @@ http/cves/2026/CVE-2026-39808.yaml
 http/cves/2026/CVE-2026-40242.yaml
 http/cves/2026/CVE-2026-40308.yaml
 http/cves/2026/CVE-2026-40887.yaml
+http/cves/2026/CVE-2026-41179.yaml
 http/cves/2026/CVE-2026-4631.yaml
 http/default-logins/avaya-phone-default-login.yaml
 http/exposed-panels/fortinet/fortisandbox-panel.yaml
