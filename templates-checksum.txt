@@ -4839,7 +4839,7 @@ http/cves/2023/CVE-2023-45375.yaml:941a97227a9b91cc4c3a72e96ab0824e4c7f2f68
 http/cves/2023/CVE-2023-4542.yaml:8528b3f02d796050833cdf8bce30fb0f651040d4
 http/cves/2023/CVE-2023-4547.yaml:0a8f1f3e7ee06fa5324505f77208fadba54b9d0c
 http/cves/2023/CVE-2023-45542.yaml:63b163bf6476c8a0dd99d04f87b06843ce49caa7
-http/cves/2023/CVE-2023-45648.yaml:7e6a4c6d03a17a6f9f43c67d650eb6b82d291318
+http/cves/2023/CVE-2023-45648.yaml:8c346aad900ae7bd5469363956eacecaa0b9ba3c
 http/cves/2023/CVE-2023-45671.yaml:9fe1e877358e25773e9bf34c57b37c6fed379ab7
 http/cves/2023/CVE-2023-4568.yaml:a7dc5f96b9fac7371b7dcfa570e581927b80debe
 http/cves/2023/CVE-2023-45826.yaml:f0bad0648b91b660b56d014af6cbad7c9c3ad64f
@@ -13156,7 +13156,7 @@ ssl/tls-version.yaml:396e167fe4dc47cc31a3823287f767ac4ba3ed6d
 ssl/untrusted-root-certificate.yaml:bc78917f6ed97df44ec66fd168e6d3d51f2050a9
 ssl/weak-cipher-suites.yaml:a2c5b71896965bcbb458e1d2a5bcf54981301156
 ssl/wildcard-tls.yaml:93487bb9d9c28bf84ae1928887b0dafef67b4117
-templates-checksum.txt:d826f7f787335e505487539f681f14739f10cc0f
+templates-checksum.txt:388ae85ee7a7bdd3aa89a96316435ae6b097eb89
 workflows/74cms-workflow.yaml:bb010e767ad32b906153e36ea618be545b4e22d0
 workflows/acrolinx-workflow.yaml:8434089bb55dec3d7b2ebc6a6f340e73382dd0c4
 workflows/activemq-workflow.yaml:20eb2f6dea0ca25d1bd556b5a63e5f25686f2376
