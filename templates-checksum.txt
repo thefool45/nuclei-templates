@@ -8746,6 +8746,7 @@ http/iot/novus-ip-camera.yaml:e1cc6e24ae82c866f9426e58647f7ae2b0767995
 http/iot/nuuno-network-login.yaml:2eaefd173bb778cf3a561d1ab1c6b799bfff7ef6
 http/iot/octoprint-3dprinter-detect.yaml:e2305e03f6442986213a648ad4706cbdd7b03255
 http/iot/open-mjpg-streamer.yaml:86118f7a3dc92c7e60ca517684133dcda23473f0
+http/iot/openremote-detect.yaml:77463655f618759a2d54577f4b517390aa211436
 http/iot/panabit-ixcache-rce.yaml:3dfe27995cfaf0b14025eb129e2541b587caa1bb
 http/iot/panasonic-network-management.yaml:dd2c565be81917b7026e7988817013211967664e
 http/iot/pqube-power-analyzers.yaml:74a3680952791e14dc40484e04822b68425622dc
@@ -13502,7 +13503,7 @@ ssl/tls-version.yaml:396e167fe4dc47cc31a3823287f767ac4ba3ed6d
 ssl/untrusted-root-certificate.yaml:bc78917f6ed97df44ec66fd168e6d3d51f2050a9
 ssl/weak-cipher-suites.yaml:a2c5b71896965bcbb458e1d2a5bcf54981301156
 ssl/wildcard-tls.yaml:93487bb9d9c28bf84ae1928887b0dafef67b4117
-templates-checksum.txt:db965f1704a00842b6d5eecfbf29fc757bdf3e54
+templates-checksum.txt:7901e5e6d5032816fbf43995a79fc6e880b94f15
 workflows/74cms-workflow.yaml:bb010e767ad32b906153e36ea618be545b4e22d0
 workflows/acrolinx-workflow.yaml:8434089bb55dec3d7b2ebc6a6f340e73382dd0c4
 workflows/activemq-workflow.yaml:20eb2f6dea0ca25d1bd556b5a63e5f25686f2376
