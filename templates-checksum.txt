@@ -7937,7 +7937,6 @@ http/exposed-panels/xiaomi-wireless-router-login.yaml:ca9d9b26c67f7f330496015386
 http/exposed-panels/xibocms-login.yaml:ea0df34b78064d54129fe3b59b0aa4698ab26033
 http/exposed-panels/xinference-panel.yaml:e2eac9930b9fc02f2cfd426393a7480eab910332
 http/exposed-panels/xnat-login.yaml:b09b9e22f63bc175ebe3246e41d30859eac36ec4
-http/exposed-panels/xoops/xoops-installation-wizard.yaml:db5f6ed004da265e67331fe43b8fd4af811e8fe2
 http/exposed-panels/xphoneconnect-admin-panel.yaml:7813a8130a71db986cd1687a8d530eefe44e3eba
 http/exposed-panels/xspeeder-login.yaml:afa738134aec12531906a25bd96881e1052c2c5e
 http/exposed-panels/xvr-login.yaml:2becb2eb833a6a53d590ed9b49ffd69f96e22305
@@ -9306,6 +9305,7 @@ http/misconfiguration/installer/wowcms-installer.yaml:24950955d23826ed2cbb0b85a3
 http/misconfiguration/installer/wowonder-installer.yaml:b6a9dfd616a67b99761de01482b9fb9cd0a44de8
 http/misconfiguration/installer/wp-install.yaml:01289d0ac7e1dfdb6672ebd5059cc68f34aca85e
 http/misconfiguration/installer/xbackbone-installer.yaml:26dde151f4c60cb48e1bb8fce272a770cccbbd18
+http/misconfiguration/installer/xoops-installer.yaml:0839962a7ca262e7ae6803dba587d66d5ce01d34
 http/misconfiguration/installer/yzmcms-installer.yaml:17925d672a58baeb01f08e978fab6d6823f7b1bc
 http/misconfiguration/installer/zabbix-installer.yaml:20163372f445cf4a27a95cfbebf205667920d6d1
 http/misconfiguration/installer/zencart-installer.yaml:63e5583b113c9e0fdc895454e569f63d39e0f2f9
@@ -13505,7 +13505,7 @@ ssl/tls-version.yaml:396e167fe4dc47cc31a3823287f767ac4ba3ed6d
 ssl/untrusted-root-certificate.yaml:bc78917f6ed97df44ec66fd168e6d3d51f2050a9
 ssl/weak-cipher-suites.yaml:a2c5b71896965bcbb458e1d2a5bcf54981301156
 ssl/wildcard-tls.yaml:93487bb9d9c28bf84ae1928887b0dafef67b4117
-templates-checksum.txt:36aa9599ae801fb3064f462571b95a29d42efea1
+templates-checksum.txt:c5a9a4ad3d96e54b8d96d77166ce3d1e15cdefc2
 workflows/74cms-workflow.yaml:bb010e767ad32b906153e36ea618be545b4e22d0
 workflows/acrolinx-workflow.yaml:8434089bb55dec3d7b2ebc6a6f340e73382dd0c4
 workflows/activemq-workflow.yaml:20eb2f6dea0ca25d1bd556b5a63e5f25686f2376
