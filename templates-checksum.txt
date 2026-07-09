@@ -6590,7 +6590,7 @@ http/exposed-panels/autoset-detect.yaml:fde9c7e5eda30e97198b9fa67f0ee82c4a2f3bb5
 http/exposed-panels/avantfax-panel.yaml:5b58b71edf50ae18cf33dba39743a31f1cc6d710
 http/exposed-panels/avatier-password-management.yaml:65110fa2031ec3564847ed9da4f37cf94178b4f9
 http/exposed-panels/avaya/avaya-aura-communication-manager-panel.yaml:d3b0af7551055e54134f23ff248ca05070af2785
-http/exposed-panels/avaya/avayaaura-system-manager-panel.yaml:043f0e938afc1b9ec3afe0b8af4f743e8f34cb62
+http/exposed-panels/avaya/avaya-aura-system-manager-panel.yaml:ef132493ef99c577946aa744dfe1c507ab489331
 http/exposed-panels/aveva-edge-panel.yaml:bf4fb83d78dfd1f91532245ff3c0b6938755d621
 http/exposed-panels/aveva-intouch-access-anywhere-panel.yaml:2e55f4978e080a69ecb6067c8e047c006ecf75e7
 http/exposed-panels/aviatrix-panel.yaml:d3e49e5862bdd290f29e149b560cae8b806c4794
@@ -13505,7 +13505,7 @@ ssl/tls-version.yaml:396e167fe4dc47cc31a3823287f767ac4ba3ed6d
 ssl/untrusted-root-certificate.yaml:bc78917f6ed97df44ec66fd168e6d3d51f2050a9
 ssl/weak-cipher-suites.yaml:a2c5b71896965bcbb458e1d2a5bcf54981301156
 ssl/wildcard-tls.yaml:93487bb9d9c28bf84ae1928887b0dafef67b4117
-templates-checksum.txt:c5a9a4ad3d96e54b8d96d77166ce3d1e15cdefc2
+templates-checksum.txt:0001ee59fac48de7e83cbdc92446b5bbb918372a
 workflows/74cms-workflow.yaml:bb010e767ad32b906153e36ea618be545b4e22d0
 workflows/acrolinx-workflow.yaml:8434089bb55dec3d7b2ebc6a6f340e73382dd0c4
 workflows/activemq-workflow.yaml:20eb2f6dea0ca25d1bd556b5a63e5f25686f2376
