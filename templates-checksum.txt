@@ -965,8 +965,8 @@ code/windows/enumeration/unquoted-service-paths.yaml:2663d300b15940f45ad54d0e731
 code/windows/enumeration/weak-service-binary-permissions.yaml:8780198c798f69ccf2a8ae801d53f558f1909e8c
 code/windows/get-stored-credentials-cmdkey.yaml:0355b4ae1b0a1fdac60cea737538510bdebe6382
 contributors.json:60c294948163c541a80c62a1edd5b1f2e76d6376
-cves.json:1445c2bf1321d50af3f354d22869ee32727a8312
-cves.json-checksum.txt:09e2ae98cbe85f58366c4098a022d6669597abc2
+cves.json:90b61a2fd68a0676c64e1ef9182ffd25f4eab84e
+cves.json-checksum.txt:fd69d9695137868bb76c063e936b47a7d292b778
 dast/ai/ai-code-execution.yaml:22499b9349751bc0841e3c87a9ad36f17d98c565
 dast/ai/ai-data-exfiltration.yaml:7c3b8514ff64b5ba6737ee77bf3c71a074e9540c
 dast/ai/ai-prompt-injection.yaml:509eeec9e6458911087a2f93e2358a4b5e285429
@@ -6149,7 +6149,7 @@ http/cves/2026/CVE-2026-49777.yaml:eeadfeae80c79c42cdd338076814c30cb116c0b0
 http/cves/2026/CVE-2026-50230.yaml:4f5e5d969be5166b52877beb6a5f29fd4f924341
 http/cves/2026/CVE-2026-5027.yaml:e818f17c674bdb8a867cfd7faecaf8d40125ab3b
 http/cves/2026/CVE-2026-5073.yaml:30898b59e0720d7fb7d10db111e4d7dbaceb90d7
-http/cves/2026/CVE-2026-50751.yaml:ceaa8216b4d29695f3314d6794958e829debe92f
+http/cves/2026/CVE-2026-50751.yaml:3be1979f486bea8a92fb9f37281959187a6e5f26
 http/cves/2026/CVE-2026-52774.yaml:3bf0693bc558a78abc6aedcd74723eec454f11f7
 http/cves/2026/CVE-2026-52815.yaml:07b5233c0414d600a7e5a81b78dc7e66332dde68
 http/cves/2026/CVE-2026-53787.yaml:951f242fa24c5ffd44cba3b952412657b778e52a
@@ -7167,6 +7167,7 @@ http/exposed-panels/kenesto-login.yaml:2c04bdb5b58b3c4984edc3d07d2af56e6c368582
 http/exposed-panels/kentico-login.yaml:9546df00573e5ab47479f9efe3f0c72cb4727bae
 http/exposed-panels/kerio-connect-client.yaml:b1ae3dff9d48e88aeee3060cdb6f9ae8b97e07fc
 http/exposed-panels/kerion-control-panel.yaml:552ffd74ac51a5833108d908dd5c88ad9c4cd04c
+http/exposed-panels/kestra-panel.yaml:8dff45f0b4dc8f6cba7395bfb03d7d1960a51547
 http/exposed-panels/kettle-panel.yaml:9030a80da35e1ebc71d58309f6700d39c2844768
 http/exposed-panels/keycloak-admin-panel.yaml:1628bfe67713a3b3a4501086e9dad6971d94b314
 http/exposed-panels/kfm/kaes-file-manager.yaml:7c1463d06de013bcc99196947581875a42e37617
@@ -8720,6 +8721,7 @@ http/iot/epmp-login.yaml:e5d48943c951a5dc300e8b79a88c52d2de9375f7
 http/iot/epson-wf-series.yaml:78d1619bacb5a32a931bd0fe91df29bdd2164c91
 http/iot/etic-telecom-panel.yaml:8f90adf941ac8abf018fbeaaf772ffc2e0542af4
 http/iot/flock-safety-camera-panel.yaml:d86a46ff27bfeb50de20c76415ac18cbe6328bc0
+http/iot/fuji-xerox-internet-service.yaml:b899c8a3acf5840cad53966566f09209a43d2d5f
 http/iot/geovision-lfi.yaml:c3e272e7868ca60d689fd8d5ee710ccf523d5862
 http/iot/grandstream-device-configuration.yaml:6979c67ef2ca207ccc47769600c2a29c5afe75c5
 http/iot/grandstream-grp-panel.yaml:66e003ca23a253eb719b084037a16553c961a41a
@@ -8732,7 +8734,6 @@ http/iot/hp-device-info-detect.yaml:9dad04ecae950f1be200659b8e5985dbc1ea0043
 http/iot/hp-laserjet-detect.yaml:c7d5a0485728b56ed665909347ebdb974e4d8783
 http/iot/huawei-home-gateway.yaml:1fef12ee313d853c5d21356b71cc8bd1b8068a03
 http/iot/hue-personal-wireless-panel.yaml:72e813713c6c4671586fde6afdf673b568b38df9
-http/iot/internet-service.yaml:7bea439ba6954c03a1f64f02fae0f7fcef9e5f30
 http/iot/iotawatt-app-exposure.yaml:db8865ba01df2f7fa449f1dd3a730acd789ea574
 http/iot/ip-webcam.yaml:71ff9045343ecc021bd830e2200847dc31fcb335
 http/iot/kevinlab-device-detect.yaml:24c9dfcfba2669bce0c788f183b71b8de392bb4f
@@ -9530,6 +9531,7 @@ http/misconfiguration/sap/sap-readconfigfile-disclosure.yaml:8d8c86a18f6d64d7f26
 http/misconfiguration/sap/sap-readlogfile-log-disclosure.yaml:d618625e3f1998aeeb3b29c6ea7687286c8b9628
 http/misconfiguration/seafile-public-registration.yaml:c11a149f3b43ca33f7cf0ebe36842d7d8047901b
 http/misconfiguration/searchreplacedb2-exposure.yaml:e2bfd04cf2f1e05dd1c9419d18c5de9564b2377b
+http/misconfiguration/seaweedfs-unauth.yaml:e9ad51812834e82b423e70d7e74a4c0debdb0f01
 http/misconfiguration/secnet-info-leak.yaml:1d88a934d34a55d5a13adc6009a383c35302ec69
 http/misconfiguration/seeyon-unauth.yaml:cd7b75cd1b1caceec88447af1e74bb3acbdf2bfa
 http/misconfiguration/selenium-exposure.yaml:1a88fa1eee1914beb446a0c06f0f571b4381bcf6
@@ -13506,7 +13508,7 @@ ssl/tls-version.yaml:396e167fe4dc47cc31a3823287f767ac4ba3ed6d
 ssl/untrusted-root-certificate.yaml:bc78917f6ed97df44ec66fd168e6d3d51f2050a9
 ssl/weak-cipher-suites.yaml:a2c5b71896965bcbb458e1d2a5bcf54981301156
 ssl/wildcard-tls.yaml:93487bb9d9c28bf84ae1928887b0dafef67b4117
-templates-checksum.txt:43ccce1c0e3146a99c900e4a5199b89510675688
+templates-checksum.txt:1bbda8319f7b19aee88611e3cb519e091ad54597
 workflows/74cms-workflow.yaml:bb010e767ad32b906153e36ea618be545b4e22d0
 workflows/acrolinx-workflow.yaml:8434089bb55dec3d7b2ebc6a6f340e73382dd0c4
 workflows/activemq-workflow.yaml:20eb2f6dea0ca25d1bd556b5a63e5f25686f2376
