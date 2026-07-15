@@ -1222,7 +1222,7 @@ dns/azure-takeover-detection.yaml:ff6785cfcfc05bb524fbc2fc20953c83fdded609
 dns/bimi-detect.yaml:c438afd028c6f8bddb1d36c2113e417fe5d34732
 dns/caa-fingerprint.yaml:5981efd13d670ef3886e4cdb4e2de0b98ad1fe73
 dns/detect-dangling-cname.yaml:caa1856e1e070f429706d3cf247410bafebb7cf7
-dns/dkim-record-detect.yaml:14d0544a168bc7157f035ea39a38221088b6033e
+dns/dkim-record-detect.yaml:43e406be5b3e4ca92814e42ec28de06a2a4d893e
 dns/dmarc-detect.yaml:12b7547b56fa46375fae1c294ed2d424058fbe98
 dns/dns-internal-ip-disclosure.yaml:577b22a1dbe674d771d5a1976bca530173a77980
 dns/dns-rebinding.yaml:dae81f532977e7c3088faca95b8e4046741e412e
@@ -13514,7 +13514,7 @@ ssl/tls-version.yaml:396e167fe4dc47cc31a3823287f767ac4ba3ed6d
 ssl/untrusted-root-certificate.yaml:bc78917f6ed97df44ec66fd168e6d3d51f2050a9
 ssl/weak-cipher-suites.yaml:a2c5b71896965bcbb458e1d2a5bcf54981301156
 ssl/wildcard-tls.yaml:93487bb9d9c28bf84ae1928887b0dafef67b4117
-templates-checksum.txt:3cc9518ad4a0680a15a4e611c367c972a314873f
+templates-checksum.txt:91d54a9f3b564fca41690f6d560a1bc8629495c8
 workflows/74cms-workflow.yaml:bb010e767ad32b906153e36ea618be545b4e22d0
 workflows/acrolinx-workflow.yaml:8434089bb55dec3d7b2ebc6a6f340e73382dd0c4
 workflows/activemq-workflow.yaml:20eb2f6dea0ca25d1bd556b5a63e5f25686f2376
