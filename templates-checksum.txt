@@ -965,8 +965,8 @@ code/windows/enumeration/unquoted-service-paths.yaml:2663d300b15940f45ad54d0e731
 code/windows/enumeration/weak-service-binary-permissions.yaml:8780198c798f69ccf2a8ae801d53f558f1909e8c
 code/windows/get-stored-credentials-cmdkey.yaml:0355b4ae1b0a1fdac60cea737538510bdebe6382
 contributors.json:60c294948163c541a80c62a1edd5b1f2e76d6376
-cves.json:65578aba46e96f68a88716c340108728244edf3f
-cves.json-checksum.txt:f3d94240b6ccad12399d50c9ed19cce593177c6e
+cves.json:94f7a1871ccdb5d63c56174fd45913b528bf0231
+cves.json-checksum.txt:23fcb09dceb4cd2eb3d98dbc2f8d956ab33a85b4
 dast/ai/ai-code-execution.yaml:22499b9349751bc0841e3c87a9ad36f17d98c565
 dast/ai/ai-data-exfiltration.yaml:7c3b8514ff64b5ba6737ee77bf3c71a074e9540c
 dast/ai/ai-prompt-injection.yaml:509eeec9e6458911087a2f93e2358a4b5e285429
@@ -6165,6 +6165,7 @@ http/cves/2026/CVE-2026-55592.yaml:74d01e9bb9ca764a624a160b5c1ea297716ae549
 http/cves/2026/CVE-2026-5615.yaml:9c2ef7bfa595e7f25467e846932cec71318a42f9
 http/cves/2026/CVE-2026-56782.yaml:bd53e04fe972e912360e7652d238d27b2ff61908
 http/cves/2026/CVE-2026-5718.yaml:b6fb90bcdd7e51fb7121db0ee47cf11321c94044
+http/cves/2026/CVE-2026-59801.yaml:666bcbbc0683ad835a71c8b43db8489ba7cd5008
 http/cves/2026/CVE-2026-6118.yaml:731fe8ef89123f91d787339b2f91e06809cff527
 http/cves/2026/CVE-2026-6203.yaml:5cffb20f89b8f0789bca91994120939eb278ca86
 http/cves/2026/CVE-2026-6433.yaml:cb51560eba15cdf2da513a00300dbb0a81e04a5e
@@ -13513,7 +13514,7 @@ ssl/tls-version.yaml:396e167fe4dc47cc31a3823287f767ac4ba3ed6d
 ssl/untrusted-root-certificate.yaml:bc78917f6ed97df44ec66fd168e6d3d51f2050a9
 ssl/weak-cipher-suites.yaml:a2c5b71896965bcbb458e1d2a5bcf54981301156
 ssl/wildcard-tls.yaml:93487bb9d9c28bf84ae1928887b0dafef67b4117
-templates-checksum.txt:32b9aa7ea90e5e752ee4bcbafb701bf1f79fd639
+templates-checksum.txt:3cc9518ad4a0680a15a4e611c367c972a314873f
 workflows/74cms-workflow.yaml:bb010e767ad32b906153e36ea618be545b4e22d0
 workflows/acrolinx-workflow.yaml:8434089bb55dec3d7b2ebc6a6f340e73382dd0c4
 workflows/activemq-workflow.yaml:20eb2f6dea0ca25d1bd556b5a63e5f25686f2376
