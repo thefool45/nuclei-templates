@@ -965,8 +965,8 @@ code/windows/enumeration/unquoted-service-paths.yaml:2663d300b15940f45ad54d0e731
 code/windows/enumeration/weak-service-binary-permissions.yaml:8780198c798f69ccf2a8ae801d53f558f1909e8c
 code/windows/get-stored-credentials-cmdkey.yaml:0355b4ae1b0a1fdac60cea737538510bdebe6382
 contributors.json:60c294948163c541a80c62a1edd5b1f2e76d6376
-cves.json:5fa4abd077a9f8b00564be30327898934095d330
-cves.json-checksum.txt:76df343f230488e0efdcf498d4190db3374f7c90
+cves.json:2ff5bae13a24e2897f1640147d48d202134bcf68
+cves.json-checksum.txt:f27cec8b631fc9efc29a1c3f14b324444d46e102
 dast/ai/ai-code-execution.yaml:22499b9349751bc0841e3c87a9ad36f17d98c565
 dast/ai/ai-data-exfiltration.yaml:7c3b8514ff64b5ba6737ee77bf3c71a074e9540c
 dast/ai/ai-prompt-injection.yaml:509eeec9e6458911087a2f93e2358a4b5e285429
@@ -6084,6 +6084,7 @@ http/cves/2026/CVE-2026-33340.yaml:ad9cb91b37b2bc10df37b8f991fc7d98b28fe0b5
 http/cves/2026/CVE-2026-33439.yaml:b385e2a66489253a8ca5d30a18dd6819920db352
 http/cves/2026/CVE-2026-33476.yaml:387a78ef789123c06684dd14ffdcc3f1a9781754
 http/cves/2026/CVE-2026-33478.yaml:63cb86558e6ffb009707ac57dc74490d3903be68
+http/cves/2026/CVE-2026-33497.yaml:b35a7cca772861d01a170f678561f381c60e62de
 http/cves/2026/CVE-2026-33534.yaml:ef394eddcc0397f8ee1e70ccd86fe9bc02c5728b
 http/cves/2026/CVE-2026-33626.yaml:2bfe7cb0b3bb66853ebab769a6e6bfc3e396692b
 http/cves/2026/CVE-2026-33868.yaml:2bf0592b76d62143dd4f3c4c8973f88d7827efdd
@@ -7875,7 +7876,7 @@ http/exposed-panels/veracore-panel.yaml:b7c853f638686fcac3df2a6ac98faf27fa7798b9
 http/exposed-panels/veritas-netbackup-panel.yaml:76ac9915483592ab831779d64a02063171f8daf1
 http/exposed-panels/veriz0wn-osint.yaml:424e38f007ff349dfc52c35a66a549aed3ddccbb
 http/exposed-panels/verizon-router-panel.yaml:852eb3dc9358dec8a99282866529461945fa5a28
-http/exposed-panels/vermeg-solife-panel.yaml:7802f55ea01133d9da382315475fd3b0e1e303a2
+http/exposed-panels/vermeg-solife-panel.yaml:4153e1fc891482441694feb6942dc3697fb782ee
 http/exposed-panels/versa/versa-director-login.yaml:cd13226467c8b41aa0be8d686c249a6eb3e3cdea
 http/exposed-panels/versa/versa-flexvnf-panel.yaml:b4d1594925e58be17f7a5eeac54b6103481b6f54
 http/exposed-panels/versa/versa-sdwan.yaml:dd795e73995bccd9284a6565c160c05583b7c07f
@@ -13539,7 +13540,7 @@ ssl/tls-version.yaml:396e167fe4dc47cc31a3823287f767ac4ba3ed6d
 ssl/untrusted-root-certificate.yaml:bc78917f6ed97df44ec66fd168e6d3d51f2050a9
 ssl/weak-cipher-suites.yaml:a2c5b71896965bcbb458e1d2a5bcf54981301156
 ssl/wildcard-tls.yaml:93487bb9d9c28bf84ae1928887b0dafef67b4117
-templates-checksum.txt:02465f1abeb1932d40865195261f3033969b0237
+templates-checksum.txt:3914149fcb3ef0b47df6877ebe492102c7028479
 workflows/74cms-workflow.yaml:bb010e767ad32b906153e36ea618be545b4e22d0
 workflows/acrolinx-workflow.yaml:8434089bb55dec3d7b2ebc6a6f340e73382dd0c4
 workflows/activemq-workflow.yaml:20eb2f6dea0ca25d1bd556b5a63e5f25686f2376
