@@ -7195,7 +7195,7 @@ http/exposed-panels/kettle-panel.yaml:9030a80da35e1ebc71d58309f6700d39c2844768
 http/exposed-panels/keycloak-admin-panel.yaml:0135c801cf5a13ded10b564e6410b5a7a4ed9cd3
 http/exposed-panels/kfm/kaes-file-manager.yaml:7c1463d06de013bcc99196947581875a42e37617
 http/exposed-panels/kfm/kfm-login-panel.yaml:64f88811997d64969d3d65de3f3e2529b3163d98
-http/exposed-panels/kiali-panel.yaml:27cacecc96c684df689d3003a91d7a55ac00bf95
+http/exposed-panels/kiali-panel.yaml:0c5e7abb101682401fcc6b41c39f0c8158bbe32a
 http/exposed-panels/kibana-panel.yaml:bc9a83a086b0f1dd56cdb03329e870b1b3b7dfde
 http/exposed-panels/kiteworks-pcn-panel.yaml:774333b8b2e2797c23250fc824aeb7fd647e04c1
 http/exposed-panels/kiwitcms-login.yaml:5060efdac3ca43d08f058a267106e8fd55ab2854
@@ -13541,7 +13541,7 @@ ssl/tls-version.yaml:396e167fe4dc47cc31a3823287f767ac4ba3ed6d
 ssl/untrusted-root-certificate.yaml:bc78917f6ed97df44ec66fd168e6d3d51f2050a9
 ssl/weak-cipher-suites.yaml:a2c5b71896965bcbb458e1d2a5bcf54981301156
 ssl/wildcard-tls.yaml:93487bb9d9c28bf84ae1928887b0dafef67b4117
-templates-checksum.txt:4018cfc9f6d13432010d5b72392de33bb28a3d7e
+templates-checksum.txt:ec370fc355a2fa7e18db7f5d6fa834a688667883
 workflows/74cms-workflow.yaml:bb010e767ad32b906153e36ea618be545b4e22d0
 workflows/acrolinx-workflow.yaml:8434089bb55dec3d7b2ebc6a6f340e73382dd0c4
 workflows/activemq-workflow.yaml:20eb2f6dea0ca25d1bd556b5a63e5f25686f2376
