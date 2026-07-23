@@ -2,6 +2,7 @@ dast/vulnerabilities/injection/unix-command-injection.yaml
 dast/vulnerabilities/injection/windows-command-injection.yaml
 http/cves/2024/CVE-2024-42323.yaml
 http/cves/2024/CVE-2024-56511.yaml
+http/cves/2025/CVE-2025-55746.yaml
 http/cves/2026/CVE-2026-15094.yaml
 http/cves/2026/CVE-2026-1980.yaml
 http/cves/2026/CVE-2026-22683.yaml
@@ -54,3 +55,4 @@ http/technologies/vespa-detect.yaml
 javascript/cves/2026/CVE-2026-15409.yaml
 javascript/cves/2026/CVE-2026-48908.yaml
 javascript/cves/2026/CVE-2026-48909.yaml
+network/cves/2023/CVE-2023-34992.yaml

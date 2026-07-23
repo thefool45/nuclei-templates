@@ -965,8 +965,8 @@ code/windows/enumeration/unquoted-service-paths.yaml:2663d300b15940f45ad54d0e731
 code/windows/enumeration/weak-service-binary-permissions.yaml:8780198c798f69ccf2a8ae801d53f558f1909e8c
 code/windows/get-stored-credentials-cmdkey.yaml:0355b4ae1b0a1fdac60cea737538510bdebe6382
 contributors.json:c6a56a25fa16673e0e961f0001be99bdbb6d49b5
-cves.json:c17091b2028a727f7c0d767beb3e3ad4acd3d350
-cves.json-checksum.txt:44d1fb26caf89df42e6c1a724f0210c3200df3e4
+cves.json:980222aca4ee114f3fec122d3470e86e669a9e6b
+cves.json-checksum.txt:f070ce4494716f1c563b0b875dfbbfce05c99309
 dast/ai/ai-code-execution.yaml:22499b9349751bc0841e3c87a9ad36f17d98c565
 dast/ai/ai-data-exfiltration.yaml:7c3b8514ff64b5ba6737ee77bf3c71a074e9540c
 dast/ai/ai-prompt-injection.yaml:509eeec9e6458911087a2f93e2358a4b5e285429
@@ -5894,6 +5894,7 @@ http/cves/2025/CVE-2025-55190.yaml:9cec39a83930b5c9fd10c20826b5cfd447453122
 http/cves/2025/CVE-2025-55303.yaml:6e1f98d2e8c3d67ae55491c3cde9df6c9849dbe9
 http/cves/2025/CVE-2025-55523.yaml:b57c46dd9c1617fe356ba1e7ac30ac2414592242
 http/cves/2025/CVE-2025-5569.yaml:037b68f3c32e8130cbd02237e54a84f3279439b1
+http/cves/2025/CVE-2025-55746.yaml:2b28772eaf93eb0d12c129e77c8156815e58620f
 http/cves/2025/CVE-2025-55747.yaml:0cfc8d9ed2cb8eeccefb218bb6d14686f70e80fb
 http/cves/2025/CVE-2025-55748.yaml:a5acb0fc760119e0eb0d87b0aeda2abf150c8d6e
 http/cves/2025/CVE-2025-55749.yaml:347d726e2949f62a5d02d8ea311e7284e2b0e31d
@@ -6024,6 +6025,7 @@ http/cves/2026/CVE-2026-21891.yaml:f9dd397b20f4787e2d01da1b643e78847a0fb5ce
 http/cves/2026/CVE-2026-22200.yaml:9d85b2b40d7fbb0ce4cdc6e9b2c4ebd1be854fad
 http/cves/2026/CVE-2026-22557.yaml:b585532db5f1b7147760f16321138af95f5062c3
 http/cves/2026/CVE-2026-2262.yaml:568fccc924d25199b09e4e2524f118ef003ffd45
+http/cves/2026/CVE-2026-22683.yaml:7d9fbe731485d15ebcdb348a5ceb106024b56ce7
 http/cves/2026/CVE-2026-22739.yaml:e8bc61f83af17734654e0c40a695f5529d5374b4
 http/cves/2026/CVE-2026-22778.yaml:9a105472c4d7612bf3274699a13fe1c97b8253df
 http/cves/2026/CVE-2026-22812.yaml:bd91bdb8c7ced6af371a7580293fc1427bc641bc
@@ -6031,6 +6033,7 @@ http/cves/2026/CVE-2026-23482.yaml:08df25036ced5d3f488a1bb80507ad453244f931
 http/cves/2026/CVE-2026-23483.yaml:5d8e6cc764bfd1c4987a85baf025b003466d411f
 http/cves/2026/CVE-2026-23486.yaml:c28bf7877d034d6157eac0861174ba753e4f2632
 http/cves/2026/CVE-2026-23550.yaml:ecbc119a52cb0b460a3f65654c3bcf9e6b3cb5df
+http/cves/2026/CVE-2026-23696.yaml:ec70a0f13d2b61dfb17b0375de41951c616e3f90
 http/cves/2026/CVE-2026-23744.yaml:416dc60421c7129a47951730c91d9a3ccab2f594
 http/cves/2026/CVE-2026-23760.yaml:87e2b986b64173c52768a05aec2a5f6e6961dd09
 http/cves/2026/CVE-2026-24128.yaml:8557dd72757865108e074c981d7f888267aabbe7
@@ -6183,6 +6186,7 @@ http/cves/2026/CVE-2026-56290.yaml:b43c419ba78ca7ac5f91c821a036cc72b064786c
 http/cves/2026/CVE-2026-56291.yaml:02664feb8f200b1c8c7298fec7fa3d495e047295
 http/cves/2026/CVE-2026-56782.yaml:6ce8c40a1ab66247088b71fe6b4261e06d01469a
 http/cves/2026/CVE-2026-5718.yaml:a9fb27cf50a46485488eebb2c1b743f04afe3050
+http/cves/2026/CVE-2026-58455.yaml:8f268b777ab4cb68b368299890759b7ab4c4a377
 http/cves/2026/CVE-2026-59801.yaml:666bcbbc0683ad835a71c8b43db8489ba7cd5008
 http/cves/2026/CVE-2026-6118.yaml:c8fa7f85d3f0fb0c5d0697b9666b65b2de08e946
 http/cves/2026/CVE-2026-6203.yaml:fc7dd864fad23ed92a49c2fbbe3a2f16d9278419
@@ -13283,6 +13287,7 @@ network/cves/2022/CVE-2022-24706.yaml:14141cdd37ff9e302c2bf6d143b0bad92fbd13ee
 network/cves/2022/CVE-2022-31793.yaml:e2da5d5c4d60b43cb07b4b14dce6e242540e68c6
 network/cves/2023/CVE-2023-22629.yaml:8c8aeca6329d45b94ee40f8a748d0cc29b1a11fb
 network/cves/2023/CVE-2023-33246.yaml:d795d78323aa36c23c8a86c0ecc0964bde88d070
+network/cves/2023/CVE-2023-34992.yaml:02c1125585ba2a077aaaebc0dc107a7a515a0d73
 network/cves/2023/CVE-2023-37582.yaml:8c625a12454a32b53ca2e3add3a8c16fcb028792
 network/cves/2023/CVE-2023-48788.yaml:d136391472ffe623a5e772e66c8a328aa8d9a579
 network/cves/2023/CVE-2023-51713.yaml:b27eba736e0acf8aca27f32c6cbaefe0477884f6
@@ -13569,7 +13574,7 @@ ssl/tls-version.yaml:396e167fe4dc47cc31a3823287f767ac4ba3ed6d
 ssl/untrusted-root-certificate.yaml:bc78917f6ed97df44ec66fd168e6d3d51f2050a9
 ssl/weak-cipher-suites.yaml:a2c5b71896965bcbb458e1d2a5bcf54981301156
 ssl/wildcard-tls.yaml:93487bb9d9c28bf84ae1928887b0dafef67b4117
-templates-checksum.txt:2b6b52821fc84d05323c400830cb236a2720cf76
+templates-checksum.txt:ad6adfeb83a6964b4a87ed71286ca51d5d7ee959
 workflows/74cms-workflow.yaml:bb010e767ad32b906153e36ea618be545b4e22d0
 workflows/acrolinx-workflow.yaml:8434089bb55dec3d7b2ebc6a6f340e73382dd0c4
 workflows/activemq-workflow.yaml:20eb2f6dea0ca25d1bd556b5a63e5f25686f2376
