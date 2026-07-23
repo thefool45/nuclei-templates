@@ -965,8 +965,8 @@ code/windows/enumeration/unquoted-service-paths.yaml:2663d300b15940f45ad54d0e731
 code/windows/enumeration/weak-service-binary-permissions.yaml:8780198c798f69ccf2a8ae801d53f558f1909e8c
 code/windows/get-stored-credentials-cmdkey.yaml:0355b4ae1b0a1fdac60cea737538510bdebe6382
 contributors.json:c6a56a25fa16673e0e961f0001be99bdbb6d49b5
-cves.json:49cd199bd30d36207e80ee132b43e4b38f55a777
-cves.json-checksum.txt:e9183d0da6ef4e9400179c977da8262de6462865
+cves.json:c17091b2028a727f7c0d767beb3e3ad4acd3d350
+cves.json-checksum.txt:44d1fb26caf89df42e6c1a724f0210c3200df3e4
 dast/ai/ai-code-execution.yaml:22499b9349751bc0841e3c87a9ad36f17d98c565
 dast/ai/ai-data-exfiltration.yaml:7c3b8514ff64b5ba6737ee77bf3c71a074e9540c
 dast/ai/ai-prompt-injection.yaml:509eeec9e6458911087a2f93e2358a4b5e285429
@@ -5344,6 +5344,7 @@ http/cves/2024/CVE-2024-4180.yaml:7da8b2a2c8d50bc4a6ebd432c25c948a359ed15e
 http/cves/2024/CVE-2024-41810.yaml:edfb080ac588bd98bd4502af714da69144706790
 http/cves/2024/CVE-2024-41955.yaml:0f55e0cdd08a80c009f877e36ab023c792c0b177
 http/cves/2024/CVE-2024-42009.yaml:e41d0cc31737aa29709e4fa5440808218f6948f0
+http/cves/2024/CVE-2024-42323.yaml:59cc7e1ea6025141f4f88cf667749a31eae9f1f4
 http/cves/2024/CVE-2024-4257.yaml:e2f842276d7a2fa008f0146326dfaa91a4c04780
 http/cves/2024/CVE-2024-42640.yaml:946421f9d191aeac31d5627392064553552506fc
 http/cves/2024/CVE-2024-42852.yaml:d089f466581e0905ee331abf5a5890354d1b4509
@@ -5468,6 +5469,7 @@ http/cves/2024/CVE-2024-55956.yaml:b9f926041dbb5413d78ba69f9d131ed96a3f59b2
 http/cves/2024/CVE-2024-56145.yaml:51f75af00a88ffaf1ee50538599b5a6c8053f8ae
 http/cves/2024/CVE-2024-56159.yaml:2fcabd462eccf2903d15e06535af92e2d1ef676b
 http/cves/2024/CVE-2024-56325.yaml:0ad22c2364fa8023c415670ee6f61bf84f8dd521
+http/cves/2024/CVE-2024-56511.yaml:6f38c622994d69a92ab5852eddd99da2928d6f55
 http/cves/2024/CVE-2024-56512.yaml:d1236b05cb8605544c53e3cd2aacb22a84ab3742
 http/cves/2024/CVE-2024-57045.yaml:4a0de4fda96112ebb996b84b4e49988c943ccdb4
 http/cves/2024/CVE-2024-57046.yaml:7fd685cc075151caafbb0ca130f37b139b988dc5
@@ -8059,6 +8061,7 @@ http/exposures/apis/strapi-page.yaml:8b1f33b0e110c61987ace56dd70fe3e3d0b7a8b3
 http/exposures/apis/swagger-api.yaml:e3e1afe16c6f62690ce0ce97e3c1cef677921908
 http/exposures/apis/tolgee-api.yaml:40a65b89948c0fe1bc77d17a3e7decfe88ee38c4
 http/exposures/apis/traefik-api-enabled.yaml:416ee3d6c4f81ab07c18d9d735b50600f1d8b9e2
+http/exposures/apis/vllm-openai-api-exposed.yaml:427c293b2feb38e4a138fd2ef9390e77ba8e750b
 http/exposures/apis/wadl-api.yaml:c65c3b63e77c7f7865f8d552479706a353f660c7
 http/exposures/apis/weglot-api-key-exposure.yaml:d874fe2f7f02f112b006912ff924be7af7fe37cd
 http/exposures/apis/wsdl-api.yaml:e019786e95844e2bdff58594b482bec172dbc051
@@ -13149,7 +13152,7 @@ javascript/default-logins/smb-default-login.yaml:9c1610a6a2ecc9c7b25013d022369ef
 javascript/default-logins/ssh-default-logins.yaml:6e6e9f7c272ef6057afa1a42c786b0d48ff97f42
 javascript/default-logins/vnc-default-login.yaml:e01cb0829ad57a3a182f92e36a505806e132ee8e
 javascript/detection/ajp-protocol-detect.yaml:1c7ec589fb77d53d48f15b8c89e0b9cb06d14e64
-javascript/detection/dameng-detect.yaml:aaa637983f4728d904121f6c1075fa87bf7e506f
+javascript/detection/dameng-detect.yaml:fc822fc66e6decaa41b7d42a89d6a2ba083ae7bc
 javascript/detection/echo-detect.yaml:1d78cabe409011a0f768eeb5028e9e63f816c902
 javascript/detection/ikev2-detect.yaml:13975ae2a38c4f508356e8ce97a09364038ceade
 javascript/detection/mssql-detect.yaml:eec7bdf6505f3b4eb748241b9a4a3cdca05c039b
@@ -13171,8 +13174,8 @@ javascript/enumeration/mysql/mysql-show-databases.yaml:5b9629ab2e7f697330d087cc2
 javascript/enumeration/mysql/mysql-show-variables.yaml:8bb93b2156644b88af2eade28a214a38ca4dc552
 javascript/enumeration/mysql/mysql-user-enum.yaml:afc8b64e45f3f5f5a9b66d60d309a037500c4c48
 javascript/enumeration/nats-server-enum.yaml:f853ff54a35b6714afb16d6ade36351c23ecc48a
-javascript/enumeration/perforce-info-disclosure.yaml:4eef5b6a665d2b38dd861d754eb8721c8f4e9cbc
-javascript/enumeration/perforce-user-enum.yaml:2a5eabfef7af86e5e826150db5d908c09ee1b2c7
+javascript/enumeration/perforce-info-disclosure.yaml:ffc0d56876391ec36db77e12befdacaa8aed21a3
+javascript/enumeration/perforce-user-enum.yaml:24c571956df0b6e7f78cc378cdbc43e147113d0f
 javascript/enumeration/pgsql/pgsql-default-db.yaml:03f6bd318c92ed48f8b1ee8db72f7568cc2f8b22
 javascript/enumeration/pgsql/pgsql-file-read.yaml:a2fe4c50aa71b690264c80ee85ba05fc265c66ee
 javascript/enumeration/pgsql/pgsql-list-database.yaml:b5b09e707df660aea44d16eff11be1850fa09724
@@ -13201,8 +13204,8 @@ javascript/misconfiguration/ldap/ldap-anonymous-login-detect.yaml:2e965542b09605
 javascript/misconfiguration/mqtt-uauth-broker.yaml:b3032cc2ab57a657099bdae8cef3ab202e73d652
 javascript/misconfiguration/mysql/mysql-empty-password.yaml:e4a3d94f787f42133b7ef49272f68bd1a2042725
 javascript/misconfiguration/netstat-service-expose.yaml:f7cd40f937ed1f61dd9c3940702cefea729c4eb5
-javascript/misconfiguration/perforce-passwordless-users.yaml:51ffaed44a98eeca776f032f73e12c1020601c21
-javascript/misconfiguration/perforce-remote-depot-unauth.yaml:fff074f1e83e42aead6064133d33d0da4a0eb7c9
+javascript/misconfiguration/perforce-passwordless-users.yaml:34a4c358e2981a2346919a7d0226631812ec970e
+javascript/misconfiguration/perforce-remote-depot-unauth.yaml:5d76356e3efd56846e418b58e922e45ca221e00e
 javascript/misconfiguration/pgsql/pgsql-empty-password.yaml:add6b5f036eacbe8171a9043807a1819a3f7dbfc
 javascript/misconfiguration/pgsql/pgsql-extensions-rce.yaml:0c37b5af3cf1be3d6c5e84c8432f8f948efff0b2
 javascript/misconfiguration/smb/smb-anonymous-access.yaml:8e8f50d4480f41970e08997b832ea58be57d9f9c
@@ -13566,7 +13569,7 @@ ssl/tls-version.yaml:396e167fe4dc47cc31a3823287f767ac4ba3ed6d
 ssl/untrusted-root-certificate.yaml:bc78917f6ed97df44ec66fd168e6d3d51f2050a9
 ssl/weak-cipher-suites.yaml:a2c5b71896965bcbb458e1d2a5bcf54981301156
 ssl/wildcard-tls.yaml:93487bb9d9c28bf84ae1928887b0dafef67b4117
-templates-checksum.txt:df1924ed823d9fac2421c3076aa095ec6357e964
+templates-checksum.txt:2b6b52821fc84d05323c400830cb236a2720cf76
 workflows/74cms-workflow.yaml:bb010e767ad32b906153e36ea618be545b4e22d0
 workflows/acrolinx-workflow.yaml:8434089bb55dec3d7b2ebc6a6f340e73382dd0c4
 workflows/activemq-workflow.yaml:20eb2f6dea0ca25d1bd556b5a63e5f25686f2376
