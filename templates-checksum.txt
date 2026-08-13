@@ -978,8 +978,8 @@ code/windows/enumeration/unquoted-service-paths.yaml:2663d300b15940f45ad54d0e731
 code/windows/enumeration/weak-service-binary-permissions.yaml:8780198c798f69ccf2a8ae801d53f558f1909e8c
 code/windows/get-stored-credentials-cmdkey.yaml:0355b4ae1b0a1fdac60cea737538510bdebe6382
 contributors.json:7dd6e8314e6d42d24b17f9c5acde7b8029f5f4f5
-cves.json:02825e9d715ec0cc75cf37746c81d545ec580c8c
-cves.json-checksum.txt:d5bfa8fc7da8ecb00eb2917997af61cbae262938
+cves.json:a951da67e01fe94f7056ebf431eba3264063ff71
+cves.json-checksum.txt:c5be3d5fd38662637c8bfb273c7dec615efceee8
 dast/ai/ai-code-execution.yaml:22499b9349751bc0841e3c87a9ad36f17d98c565
 dast/ai/ai-data-exfiltration.yaml:7c3b8514ff64b5ba6737ee77bf3c71a074e9540c
 dast/ai/ai-prompt-injection.yaml:509eeec9e6458911087a2f93e2358a4b5e285429
@@ -5651,6 +5651,7 @@ http/cves/2025/CVE-2025-1338.yaml:ce4ace93e557a78f38057a5a5b2b4cd93fe7b328
 http/cves/2025/CVE-2025-13390.yaml:f2b7698fa05b30149ab7e100c249831a861eb051
 http/cves/2025/CVE-2025-13418.yaml:ccc75207cf5fab7c11dbf72de3675f983a14deeb
 http/cves/2025/CVE-2025-13486.yaml:c40751ed9b95f448871b8c9c9403872cc95e64f6
+http/cves/2025/CVE-2025-13528.yaml:606b2247d0ca53c0288e5ac36b484d2e0be98d23
 http/cves/2025/CVE-2025-1361.yaml:c57eb5341027ea5ff423e53fda01b87d69dedcb0
 http/cves/2025/CVE-2025-13652.yaml:87bc65769ea8ede531af052052fbc4da15e87f95
 http/cves/2025/CVE-2025-13773.yaml:595c697c406fa9efa428f5669274717295b687a5
@@ -5745,7 +5746,7 @@ http/cves/2025/CVE-2025-29085.yaml:166bd44aa7632b16c51cc0f27f76103b83b91ffb
 http/cves/2025/CVE-2025-29306.yaml:0c276153d16e2e11a04a88362162f280ff34f2d8
 http/cves/2025/CVE-2025-29635.yaml:adee4f51f3bf75ecc212f10b6ec69aa20148e532
 http/cves/2025/CVE-2025-29925.yaml:ed3cf3577471c261e12f1b0194a653051cddf159
-http/cves/2025/CVE-2025-29927.yaml:3230fe81d4b547950088adcdcb1533ea78a7291b
+http/cves/2025/CVE-2025-29927.yaml:300993e782a22ccaf466bc415c7572c3172d3d74
 http/cves/2025/CVE-2025-30208.yaml:e5913c20b06343139e33b6363fb630fda184da8e
 http/cves/2025/CVE-2025-30220.yaml:7d7e73b2045cb94585447545fabe3d08ecdea3f8
 http/cves/2025/CVE-2025-30406.yaml:89773597b4ec8e4444ae3c0ad2eb8e92f52ae048
@@ -6034,6 +6035,7 @@ http/cves/2026/CVE-2026-14894.yaml:0e53100994af9e9b2d321eda81b7adb15f0fc20c
 http/cves/2026/CVE-2026-1492.yaml:a979f989255c2db4532f2cb6091a0c6b1f241ee3
 http/cves/2026/CVE-2026-15094.yaml:ef5f0a2611e5f7af608d07f22c31269e5e91fa96
 http/cves/2026/CVE-2026-1557.yaml:bc2bbfed779e93cebb8dec5b13ae36e4545776e0
+http/cves/2026/CVE-2026-15733.yaml:57a84d5129c97602da9c2fe879110fd9ff90af31
 http/cves/2026/CVE-2026-1581.yaml:d2c6ca12e797605a3041f0f4adc016c4fa69a303
 http/cves/2026/CVE-2026-1603.yaml:c5cdf0a6b99abe873a57c157cdcbfdb3943f5de4
 http/cves/2026/CVE-2026-17505.yaml:711a9acf738c9363d398310b187c06a625da34b9
@@ -6231,6 +6233,7 @@ http/cves/2026/CVE-2026-56291.yaml:6fe934538e9578f406c526b11c412b20e8b218a2
 http/cves/2026/CVE-2026-56782.yaml:20c80547fa52dff333fc7e70d66e7d71ffa0a261
 http/cves/2026/CVE-2026-5718.yaml:ba375a4fc9dac8aded97cad0d8337fc4a7f4cb00
 http/cves/2026/CVE-2026-58455.yaml:415208a027bf8fcf7648fc79a6bfdfb7e7d22b50
+http/cves/2026/CVE-2026-59774.yaml:ee2be345c5c51f3b275aaa28ceab14caa50a2d2a
 http/cves/2026/CVE-2026-59801.yaml:666bcbbc0683ad835a71c8b43db8489ba7cd5008
 http/cves/2026/CVE-2026-60004.yaml:7421a66415fcc0edbbf133b9b16096062825e2ad
 http/cves/2026/CVE-2026-6118.yaml:1702c9ede995c9df70373c814e19cabe90f413d7
@@ -6260,7 +6263,7 @@ http/cves/2026/CVE-2026-9082.yaml:8496ec6dea4aaa582959cdf444b5cb146dc8ddc7
 http/cves/2026/CVE-2026-9198.yaml:f21c4357c442e246e40dd8b64eb7795778005889
 http/cves/2026/CVE-2026-9282.yaml:dd080f2b1a2bd3130935e81bf6c2b7c2414ca1e8
 http/cves/2026/CVE-2026-9290.yaml:414460b54077a8a1b2d3d6fa5fde99665dc87171
-http/cves/2026/CVE-2026-9506.yaml:e2127611869a3ec77c12a58a23aa1f9f623ecd6b
+http/cves/2026/CVE-2026-9506.yaml:4825bfff2a5b38f44e814a4def612dd6cf40a590
 http/default-logins/3com/3Com-wireless-default-login.yaml:2a19d1d409fb70dfbc3aa3fa666a66ae520b9030
 http/default-logins/3com/3com-nj2000-default-login.yaml:ce36ab3f28749844fdcb22cb901ad41bd69694b3
 http/default-logins/3ware-default-login.yaml:ad4e4b4987d95c6a88c82550a5c8a550b34b103c
@@ -7390,6 +7393,7 @@ http/exposed-panels/microsoft-exchange-panel.yaml:0a803ab588bad54207bfdec0ea554d
 http/exposed-panels/microsys-promotic-panel.yaml:6a48c018b1dd31346276c97ae05ff8d85dfa39f4
 http/exposed-panels/mikrotik/mikrotik-routeros.yaml:cd76f17df8abb4f09b4403aa4ad798f102b5fa43
 http/exposed-panels/mini-start-page.yaml:ca743bab4524f6315d689bf1fc3ba7c1872e3792
+http/exposed-panels/miniflux-panel.yaml:ea882503d9059bb4c8ec6191cd097652dbb0b44b
 http/exposed-panels/minio-browser.yaml:2c44a07173fb3c1dd6c025988ed7079a4ab0a416
 http/exposed-panels/minio-console.yaml:86774ee032b934f53bdbc6a59f05486b22880970
 http/exposed-panels/misp-panel.yaml:796dd55c63273179f1dc2aef93431b4945138f1f
@@ -8191,6 +8195,7 @@ http/exposures/configs/cgi-printenv.yaml:ebe6f22842d20ba307164856660ce21c748517a
 http/exposures/configs/circleci-config.yaml:df0fc1ab06f1d4a17b98810c7f5ff6fb8821ba8b
 http/exposures/configs/circleci-ssh-config.yaml:eb10390a85e06a08308acc3cd9701fe7654bdb9f
 http/exposures/configs/cisco-network-config.yaml:ce52f8aadd9b08f21dc3f87efea4834e8b4a8aea
+http/exposures/configs/claude-code-agents.yaml:1f01bfc686825d03d08da6fc9ea024f61abcba61
 http/exposures/configs/claude-settings-exposure.yaml:d2fac7c4f0e847202386058c194d5a7d554bcbc3
 http/exposures/configs/codeception-config.yaml:6260d7c0be13dbd83ffd1bbc226f388b02e13e19
 http/exposures/configs/codeclimate-config-exposure.yaml:7c2230532f64848db9e077170fad354af29a70bb
@@ -13656,7 +13661,7 @@ ssl/tls-version.yaml:396e167fe4dc47cc31a3823287f767ac4ba3ed6d
 ssl/untrusted-root-certificate.yaml:bc78917f6ed97df44ec66fd168e6d3d51f2050a9
 ssl/weak-cipher-suites.yaml:a2c5b71896965bcbb458e1d2a5bcf54981301156
 ssl/wildcard-tls.yaml:93487bb9d9c28bf84ae1928887b0dafef67b4117
-templates-checksum.txt:6476c827d172415adf7d6f2861218aea58d3f5be
+templates-checksum.txt:1f46b629fa201969dcaf2a401079786e5692f199
 workflows/74cms-workflow.yaml:bb010e767ad32b906153e36ea618be545b4e22d0
 workflows/acrolinx-workflow.yaml:8434089bb55dec3d7b2ebc6a6f340e73382dd0c4
 workflows/activemq-workflow.yaml:20eb2f6dea0ca25d1bd556b5a63e5f25686f2376
