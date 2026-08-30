@@ -978,8 +978,8 @@ code/windows/enumeration/unquoted-service-paths.yaml:2663d300b15940f45ad54d0e731
 code/windows/enumeration/weak-service-binary-permissions.yaml:8780198c798f69ccf2a8ae801d53f558f1909e8c
 code/windows/get-stored-credentials-cmdkey.yaml:0355b4ae1b0a1fdac60cea737538510bdebe6382
 contributors.json:7dd6e8314e6d42d24b17f9c5acde7b8029f5f4f5
-cves.json:13006a68cf525daed57ca0580bae8d6ecda7cce7
-cves.json-checksum.txt:803d06cdcd278eedef248776c18107f1ef28ba12
+cves.json:69ae60b5509717d91baa7be96c5b6f88f043a0d8
+cves.json-checksum.txt:4f744c83f7e65fc6f1c93a3b03ef7aa833d668e3
 dast/ai/ai-code-execution.yaml:22499b9349751bc0841e3c87a9ad36f17d98c565
 dast/ai/ai-data-exfiltration.yaml:7c3b8514ff64b5ba6737ee77bf3c71a074e9540c
 dast/ai/ai-prompt-injection.yaml:509eeec9e6458911087a2f93e2358a4b5e285429
@@ -2598,6 +2598,7 @@ http/cves/2017/CVE-2017-7855.yaml:324ec5b6ee367a2805716b21d04fb37b37731b84
 http/cves/2017/CVE-2017-7921.yaml:1495eeed544c7b7cd8f30b4bcfc340e56a12c94b
 http/cves/2017/CVE-2017-7925.yaml:1fb37433a464e33554676fce37e55b00f6017abe
 http/cves/2017/CVE-2017-8046.yaml:3173bc76b5d21b3d8b47d3baf8efe235a4cbc4e7
+http/cves/2017/CVE-2017-8225.yaml:441583551e9f37173ef760614ff4e919a14cc530
 http/cves/2017/CVE-2017-8229.yaml:ab290836949f4cac9560c65488e57a46932ead03
 http/cves/2017/CVE-2017-8917.yaml:5fb2d77e9e232530278d276f41c910cd08e341a3
 http/cves/2017/CVE-2017-9140.yaml:7c9c280bd5db22a4f33dce173e34fd607c448247
@@ -4314,6 +4315,7 @@ http/cves/2022/CVE-2022-38870.yaml:10e7b937780891d609b7abc8ace668236b9e689d
 http/cves/2022/CVE-2022-39048.yaml:b3f05af27b2f756b4c6dd34d23ba56018f3f46cf
 http/cves/2022/CVE-2022-3908.yaml:c330ea493c3781ac21e5d6effa1c97d2972c1dcd
 http/cves/2022/CVE-2022-39195.yaml:12ab93e1fba990307a4c0c0acf10a416d06559bd
+http/cves/2022/CVE-2022-39258.yaml:63eb92e5e6a97ffff7bdea7b7cb7c58736e942bd
 http/cves/2022/CVE-2022-3933.yaml:82b5791e92a9763a32418c14cd50a1eb424d9d34
 http/cves/2022/CVE-2022-3934.yaml:713e9aec7985f19cbe6322e655c0a5edc5addf6b
 http/cves/2022/CVE-2022-3980.yaml:17119c151620657db9e2fdd5affa196a9fd9447a
@@ -6012,6 +6014,7 @@ http/cves/2026/CVE-2026-0560.yaml:08046d0cd95834e6b91978c8c6ec7fae55884d44
 http/cves/2026/CVE-2026-0594.yaml:1eb6554087ab6cb1c3b043650671042fe8bac0ce
 http/cves/2026/CVE-2026-0717.yaml:d0f2113be51915f3ff93d144e08eaf76e5c48ff1
 http/cves/2026/CVE-2026-0740.yaml:f1b8d89dfffd9a0808ad23f315299bc40d55a479
+http/cves/2026/CVE-2026-0743.yaml:6349614adba72f4bfda659f275ff2f9eb4be6ab0
 http/cves/2026/CVE-2026-0770.yaml:2504d6202cae95d85154dd810f6d133ae143aa43
 http/cves/2026/CVE-2026-0829.yaml:1801bfab6a0c985015a0f44f4dd00cf66be31e07
 http/cves/2026/CVE-2026-0926.yaml:af55a7407c5b1b7e750a134b1018ce2a1d090367
@@ -6215,6 +6218,7 @@ http/cves/2026/CVE-2026-42461.yaml:b330c376b87c20dafce7d66bedeb4cc71433d90a
 http/cves/2026/CVE-2026-42569.yaml:09aaa8bf33e7ad1ebd3c11724efc5047840cc622
 http/cves/2026/CVE-2026-4257.yaml:46e99d11538ac93b05c9f1594c1a399020834cea
 http/cves/2026/CVE-2026-42589.yaml:d36c9aebe99c87d16fde896b6a849976fe7c24e7
+http/cves/2026/CVE-2026-42596.yaml:5b612bf49ad27b8d7f03f181ff2d927382ff93ec
 http/cves/2026/CVE-2026-42647.yaml:38971444ee29c923d834afc3b311080c5a23a7b8
 http/cves/2026/CVE-2026-42796.yaml:590a7f7b3b5c8b4e8da08f2b8e8c8b270a7207f8
 http/cves/2026/CVE-2026-42878.yaml:4cb07e39e65792d395eef731542ba5d400cdc38d
@@ -7029,11 +7033,13 @@ http/exposed-panels/django-admin-panel.yaml:b4dbf5a3cf172524d070ad1229c476ebdcd7
 http/exposed-panels/docebo-elearning-panel.yaml:d2572a59cdd60c1758d849e6e1b06387d9f2adf9
 http/exposed-panels/dockge-panel.yaml:870afe274c69de8f2d434f1ac1858732c5746a69
 http/exposed-panels/dockwatch-panel.yaml:700a5d0eed2358f4c93a2ac636a2d9f79016fbd3
+http/exposed-panels/docmost-panel.yaml:258653a3fb20f9c9d763cdf85ee09ceaf9505167
 http/exposed-panels/documenso-panel.yaml:9c60f7347b1df70a60bbc1400dc3e27071bc59c3
 http/exposed-panels/docuware-panel.yaml:3e5dc44d29afad6932376d088c9ede34ff0e7466
 http/exposed-panels/dokploy-panel.yaml:ff2fff19a8997e41d98d2104e75238d55f959fe3
 http/exposed-panels/dokuwiki-panel.yaml:1b629904a5665fc5fa6a717b37017ec6eb62b1b9
 http/exposed-panels/dolibarr-panel.yaml:2b89d0106e345153c04de1941536fcd085f47485
+http/exposed-panels/donetick-panel.yaml:4a8f304e5460a341b5cb605668d395a3c19c7175
 http/exposed-panels/doris-panel.yaml:441cf66a7a031b0af23e8ca3f860cb08e149a4e9
 http/exposed-panels/dotclear-panel.yaml:a94a7d8658fdef3cb60e6370cd43edc9d73dc400
 http/exposed-panels/dotcms-admin-panel.yaml:b9b47bcbecd903dfdeaa5f95609ad10531ccf8ea
@@ -7418,6 +7424,7 @@ http/exposed-panels/librephotos-panel.yaml:1b1052f3d47d5dd3fdb5268259d903641d106
 http/exposed-panels/librespeed-panel.yaml:4145c83237690154430e7e0c0778f2e0c104344d
 http/exposed-panels/liferay-portal.yaml:10adc6745ed265663258a147d54cdfa7ae542d43
 http/exposed-panels/ligolo-ng-panel.yaml:eefa0b6c34e54099beb2373f4b67f24340f42867
+http/exposed-panels/linkding-panel.yaml:81fa329b47b3b0c8387cc26c42bf73db41959a56
 http/exposed-panels/linkerd-panel.yaml:28b6f89c6427579c24469333bdba262802b29a50
 http/exposed-panels/linksys-wifi-login.yaml:c5be65dd21e9798830797f5731292b4f385ec3cc
 http/exposed-panels/linkwarden-panel.yaml:77a00b8abf14c17fa2a825d6270e60ba23d44d6b
@@ -7792,6 +7799,7 @@ http/exposed-panels/riseup-panel.yaml:7b19b91e89828686a70ba441adf6cd5cdbfd6290
 http/exposed-panels/rocketchat-panel.yaml:e0a8f5c78753abc73f8f3cb8ee0eb7b04a2ad0a3
 http/exposed-panels/rocketmq-console-exposure.yaml:c46b4fbded12b2db8276c0fb0e96d70514288cce
 http/exposed-panels/rockwell-factorytalk-viewpoint-panel.yaml:1a71117bc8f5c19ba83d668f4a0d65c249c97003
+http/exposed-panels/romm-panel.yaml:61e57b3fa02459cdbde65605ddcfc26be7bdb378
 http/exposed-panels/room-alert-detect.yaml:cab7927409345deb99c0b2789313fa9a97d2e7de
 http/exposed-panels/roxy-fileman.yaml:ebed1ba810bf490006d32eb8238d579e0e53dc70
 http/exposed-panels/royalevent-management-panel.yaml:087ebba9a23571751e943336a0c588a1148afed4
@@ -7877,9 +7885,10 @@ http/exposed-panels/showdoc-panel.yaml:6a9a4485ef9b0a49f3690c6e3a50c9a80228f1fe
 http/exposed-panels/sicom-panel.yaml:770b8df52871555812b39d2dc1598a7f07c2118e
 http/exposed-panels/sidekiq-dashboard.yaml:792499dbe84bc4d080c3bbda0bab75e39e866031
 http/exposed-panels/signet-explorer-dashboard.yaml:16957fc3dfe626b7eac1f41a16bd3b4e4a5161d4
-http/exposed-panels/signoz-panel.yaml:3b27a5cd11c1ceb4e532561d2c13bc87415293d1
+http/exposed-panels/signoz-panel.yaml:779072d48e9944fb5ea11b377ca4627a44509625
 http/exposed-panels/sillytavern-panel.yaml:3ba3a93063fafdefb675de19eed5f73c9529b502
 http/exposed-panels/silver-peak-edgeconnect-panel.yaml:e676f957a01c467499271c139792ba571df6407c
+http/exposed-panels/silverbullet-panel.yaml:b54b04fd8bdb30d8ce790fdc8aedc2004aac10e6
 http/exposed-panels/simplehelp-login-panel.yaml:e9e1efb2311d0a50b6a9264660ee751aa3424c0f
 http/exposed-panels/sitecore-login-panel.yaml:7b2351e3398beaa5b66208db320049bb2b93ef52
 http/exposed-panels/sitecore-login.yaml:e4f6d775c3f50f2f2b9d0608735982c35e9c1504
@@ -11337,6 +11346,7 @@ http/technologies/cups-detect.yaml:6da1f3e80b7957959b24ce6947270dbbc76770a4
 http/technologies/cvsweb-detect.yaml:dc157280585c4cebb3a1304eb3c4b7c1e5b158f8
 http/technologies/dash-panel-detect.yaml:fd7097c64d37efea6d614db6f80b20ff6ccb9e24
 http/technologies/datadog-rum-detect.yaml:d621007bea0143193e568e22cfec511cd6f804f2
+http/technologies/dawarich-detect.yaml:eb64e09406e0cdb52995aef9af3be1258dda265c
 http/technologies/dedecms-detect.yaml:c1b70e37e78aec94210789814dd61353832add06
 http/technologies/default-amazon-cognito.yaml:822cef2a00edb192870d2a90e85207eae52495ad
 http/technologies/default-apache-miracle.yaml:2956b399e208f1789a8bd62b0fb86d39e0291b09
@@ -13787,7 +13797,7 @@ ssl/tls-version.yaml:396e167fe4dc47cc31a3823287f767ac4ba3ed6d
 ssl/untrusted-root-certificate.yaml:bc78917f6ed97df44ec66fd168e6d3d51f2050a9
 ssl/weak-cipher-suites.yaml:a2c5b71896965bcbb458e1d2a5bcf54981301156
 ssl/wildcard-tls.yaml:93487bb9d9c28bf84ae1928887b0dafef67b4117
-templates-checksum.txt:0e01b155e9f9e64a77644be189dbd7ec41d68559
+templates-checksum.txt:661412dffc60159106337860fbbf8632b0596d73
 workflows/74cms-workflow.yaml:bb010e767ad32b906153e36ea618be545b4e22d0
 workflows/acrolinx-workflow.yaml:8434089bb55dec3d7b2ebc6a6f340e73382dd0c4
 workflows/activemq-workflow.yaml:20eb2f6dea0ca25d1bd556b5a63e5f25686f2376
