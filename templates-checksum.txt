@@ -978,8 +978,8 @@ code/windows/enumeration/unquoted-service-paths.yaml:2663d300b15940f45ad54d0e731
 code/windows/enumeration/weak-service-binary-permissions.yaml:8780198c798f69ccf2a8ae801d53f558f1909e8c
 code/windows/get-stored-credentials-cmdkey.yaml:0355b4ae1b0a1fdac60cea737538510bdebe6382
 contributors.json:7dd6e8314e6d42d24b17f9c5acde7b8029f5f4f5
-cves.json:36f37ee7fedeb2aa38db36534418664f54c0a181
-cves.json-checksum.txt:ac8a8fc4c50d7b4cf00d8e319733c0a9337b5381
+cves.json:bd42685bf69ea2818a845ba1543294cafbf5e9f2
+cves.json-checksum.txt:f518827b21c1d37567d0784d037acdf22b608ede
 dast/ai/ai-code-execution.yaml:22499b9349751bc0841e3c87a9ad36f17d98c565
 dast/ai/ai-data-exfiltration.yaml:7c3b8514ff64b5ba6737ee77bf3c71a074e9540c
 dast/ai/ai-prompt-injection.yaml:509eeec9e6458911087a2f93e2358a4b5e285429
@@ -6013,6 +6013,7 @@ http/cves/2025/CVE-2025-9985.yaml:86aaf8139e7c434e4d1056847abd1786614e9c36
 http/cves/2026/CVE-2026-0545.yaml:e1234c49d7cd20ba065f1a6dfbbd2d6c1abaf16c
 http/cves/2026/CVE-2026-0558.yaml:212a440e6ae44753888d138405cd16f1c9763bc7
 http/cves/2026/CVE-2026-0560.yaml:5b9999f3ce735b9ba15b24c9269f745f67e2ba85
+http/cves/2026/CVE-2026-0561.yaml:ec76b537e99a39830e24eb687074ba5f6392e947
 http/cves/2026/CVE-2026-0594.yaml:1eb6554087ab6cb1c3b043650671042fe8bac0ce
 http/cves/2026/CVE-2026-0650.yaml:82cf64ba7a7fa345bc33cfa3861bbed3b6d89695
 http/cves/2026/CVE-2026-0717.yaml:057004dfee6473d34ba8388a694468f09ebf3617
@@ -13811,7 +13812,7 @@ ssl/tls-version.yaml:396e167fe4dc47cc31a3823287f767ac4ba3ed6d
 ssl/untrusted-root-certificate.yaml:bc78917f6ed97df44ec66fd168e6d3d51f2050a9
 ssl/weak-cipher-suites.yaml:a2c5b71896965bcbb458e1d2a5bcf54981301156
 ssl/wildcard-tls.yaml:93487bb9d9c28bf84ae1928887b0dafef67b4117
-templates-checksum.txt:cc1c6b3039a3e9dad369ccb5e4fbed25ec7e8b72
+templates-checksum.txt:d8324d12956cd6deeb9b7fb1443b139f966e7b6e
 workflows/74cms-workflow.yaml:bb010e767ad32b906153e36ea618be545b4e22d0
 workflows/acrolinx-workflow.yaml:8434089bb55dec3d7b2ebc6a6f340e73382dd0c4
 workflows/activemq-workflow.yaml:20eb2f6dea0ca25d1bd556b5a63e5f25686f2376
