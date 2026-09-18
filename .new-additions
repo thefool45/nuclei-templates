@@ -1,1 +1,6 @@
+http/cves/2021/CVE-2021-42392.yaml
 http/cves/2026/CVE-2026-18072.yaml
+http/cves/2026/CVE-2026-42018.yaml
+http/cves/2026/CVE-2026-85688.yaml
+http/misconfiguration/etcd-unauthenticated-api-v3.yaml
+http/misconfiguration/etcd-unauthenticated-raft.yaml

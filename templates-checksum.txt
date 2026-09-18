@@ -979,8 +979,8 @@ code/windows/enumeration/unquoted-service-paths.yaml:2663d300b15940f45ad54d0e731
 code/windows/enumeration/weak-service-binary-permissions.yaml:8780198c798f69ccf2a8ae801d53f558f1909e8c
 code/windows/get-stored-credentials-cmdkey.yaml:0355b4ae1b0a1fdac60cea737538510bdebe6382
 contributors.json:7dd6e8314e6d42d24b17f9c5acde7b8029f5f4f5
-cves.json:d84bf5de1bcdb2174edc4264f467c933c09cfbc8
-cves.json-checksum.txt:4f2c3095e24ac15c2136b2b75180d2200e12d12a
+cves.json:72a6c6f6ed57790ac43b556393adf10d96db0420
+cves.json-checksum.txt:e710fde9b0f4f0653ff0c135cd40a47885b8bdc2
 dast/ai/ai-code-execution.yaml:22499b9349751bc0841e3c87a9ad36f17d98c565
 dast/ai/ai-data-exfiltration.yaml:7c3b8514ff64b5ba6737ee77bf3c71a074e9540c
 dast/ai/ai-prompt-injection.yaml:509eeec9e6458911087a2f93e2358a4b5e285429
@@ -3806,6 +3806,7 @@ http/cves/2021/CVE-2021-42192.yaml:2aeb531170fa368544225e5f9b400d7d62186da5
 http/cves/2021/CVE-2021-42237.yaml:de6f5e57e789db89d761a314d8013dcb33209f7d
 http/cves/2021/CVE-2021-42258.yaml:3857a7787af20e001fd5a727ab942c16704b72f8
 http/cves/2021/CVE-2021-42359.yaml:e078b41e6fb17e6b57312caed1a98c1e149fc411
+http/cves/2021/CVE-2021-42392.yaml:fc645ad89b2473a2efde2f5a1bebbab45964de6e
 http/cves/2021/CVE-2021-42551.yaml:8cc0afaf78926e41141d7363062160f62350c569
 http/cves/2021/CVE-2021-42565.yaml:ff99a831a5a79e6196f595e4450cbad045ba4e0e
 http/cves/2021/CVE-2021-42566.yaml:45ac362c7b84e39d78f73ef7ec108a45159930c0
@@ -3908,7 +3909,7 @@ http/cves/2022/CVE-2022-0346.yaml:c2292e2c7c024fd366b6a50caba7f580be1ff7c9
 http/cves/2022/CVE-2022-0349.yaml:941cef1188cd188fa519498234b494f01ba866e2
 http/cves/2022/CVE-2022-0378.yaml:085b335ca8416e3bab26d3db74c345e097f74f7d
 http/cves/2022/CVE-2022-0381.yaml:a6144cd53753aea0e8f7844c5d30e9e62e5470d3
-http/cves/2022/CVE-2022-0412.yaml:16d96832a16255915d94695ceab620c7a73d9adf
+http/cves/2022/CVE-2022-0412.yaml:e09a3cf64b2a74388e70988352731400f9084664
 http/cves/2022/CVE-2022-0415.yaml:fe375b4a713b4b8f24fb5c121423b160990c37c2
 http/cves/2022/CVE-2022-0422.yaml:bdaaf9adac1637d32280c9d1c1623fe0c6bdffc4
 http/cves/2022/CVE-2022-0424.yaml:b772c438ac4efec8ab5cdf31715f1927cd7ef61e
@@ -4116,7 +4117,7 @@ http/cves/2022/CVE-2022-25486.yaml:cae5a080dcc4ba9432676e2725d323ee8f9de056
 http/cves/2022/CVE-2022-25487.yaml:6b025bf87e6848e3a7aea60d00ffba0167ca50ff
 http/cves/2022/CVE-2022-25488.yaml:ccfe31bb38c6713069e6b627a5ee5ea6197b2586
 http/cves/2022/CVE-2022-25489.yaml:bf386fec27ea9b9ca2c1010dc3130ccb44fa5432
-http/cves/2022/CVE-2022-25497.yaml:aac0f406ce74c9a8f3630f2af0b240cf0a793c5b
+http/cves/2022/CVE-2022-25497.yaml:6d8959b75c25da4793659ecf1f003cc53a0e40bd
 http/cves/2022/CVE-2022-2551.yaml:df3c20f47fc6642b55b79ccd7ca2b3d2464c460e
 http/cves/2022/CVE-2022-2552.yaml:57052364dda19c766c5b363e4165af39c1cf3f6a
 http/cves/2022/CVE-2022-25568.yaml:d1c57b34b1582e8b6ae1f56ff2fd2f61be4a0393
@@ -6061,7 +6062,7 @@ http/cves/2026/CVE-2026-16268.yaml:a1a637488b36a1d61c4949b85e2e6962c19c54b3
 http/cves/2026/CVE-2026-17505.yaml:406c8e43243f4b9de3c0ab30b714214bd7ce5154
 http/cves/2026/CVE-2026-17532.yaml:0647f92d79578e97557c7439e04733e2923fbe71
 http/cves/2026/CVE-2026-17594.yaml:b1de0bc769f0fcc2de351807d3953b783ceba327
-http/cves/2026/CVE-2026-18072.yaml:657e8e808e002864af4d1f2cb9436db1bbea3c1f
+http/cves/2026/CVE-2026-18072.yaml:6b45c35cd24857eadc170c819dc705e4707679ac
 http/cves/2026/CVE-2026-1830.yaml:16f76d94f41ee18e9637aead26993904366e2ab7
 http/cves/2026/CVE-2026-18577.yaml:a445f5f8d8f6de83c0be3bb036b38c8f9338395f
 http/cves/2026/CVE-2026-1890.yaml:534cda5164014f06614ecbfafc12e7d79e66efb0
@@ -6239,6 +6240,7 @@ http/cves/2026/CVE-2026-41641.yaml:fe1ef90df5c5877f44db3bbb992ddf0c63f558b1
 http/cves/2026/CVE-2026-41679.yaml:b7507fe562caa37bfb620b966e01123e4e3525ff
 http/cves/2026/CVE-2026-41940.yaml:f6e18a34a145845b3ef9c22786b0f68e1403a044
 http/cves/2026/CVE-2026-41948.yaml:1a6dca3fdb76d716db62e084e7b7074b77e862f2
+http/cves/2026/CVE-2026-42018.yaml:ff60b58e3600abeb9af7fe5d1b988071f373d8af
 http/cves/2026/CVE-2026-42031.yaml:f3e4cdb1cddf87b0cee00d0a9327a3b6fe55a888
 http/cves/2026/CVE-2026-42208.yaml:91f0a2b970883386bbe2e3ecac22229f0a89a1a1
 http/cves/2026/CVE-2026-42221.yaml:73cadfdb121b99715c1372811ccc258984afde6c
@@ -6385,6 +6387,7 @@ http/cves/2026/CVE-2026-8383.yaml:a94208a6e41b3369d3c2f7ce9ae64b67e00bed96
 http/cves/2026/CVE-2026-8385.yaml:b75735f4e67bb0b21cc87dcaf801d00faa0ff262
 http/cves/2026/CVE-2026-8386.yaml:3d9af9e88c08945ebd41615ce52dc1874b56f903
 http/cves/2026/CVE-2026-85200.yaml:63c1f19c01d64f0139a0b330df5ea6bb80d052de
+http/cves/2026/CVE-2026-85688.yaml:80c020621aa347b1bae08e0538011dabfaddd584
 http/cves/2026/CVE-2026-85706.yaml:14b4b129beda53e970bb9c19b0225bbfac17ff45
 http/cves/2026/CVE-2026-86206.yaml:537b126b66d723da7ccfa59c8cb0d523631d2a3b
 http/cves/2026/CVE-2026-86207.yaml:df8030c7c5e6b6af1b03bb0b3ae6af929629b52c
@@ -6527,7 +6530,7 @@ http/default-logins/grandstream/grandstream-grp-default-login.yaml:15ca4f55c1bc4
 http/default-logins/graylog/graylog-default-login.yaml:9af0e53b0adbe5580b94b3cb47683a94af3e0365
 http/default-logins/grocy/grocy-default-login.yaml:6e5e6311b766fc2c1565ae36ddf75cb819727827
 http/default-logins/guacamole/guacamole-default-login.yaml:19cf4035531d50866cbc06e02e3db20e9c020c4f
-http/default-logins/gude/gude-default-login.yaml:efcc15e811c8cbc0ac4b7f7594fdcfc6a1e2f983
+http/default-logins/gude/gude-default-login.yaml:186fd8f34e4efc318403c55f5deac83b187882b2
 http/default-logins/harbor-registry-default-login.yaml:fa15034174d21e19fa3549ab0e584b8090d6bfd1
 http/default-logins/homebridge-default-login.yaml:7cdd254eb5d8bc36b7d7b5bdae10a2996bbc7a2c
 http/default-logins/hongdian/hongdian-default-login.yaml:f28625cda752e34606a1b85f730feea166e325ab
@@ -9314,7 +9317,9 @@ http/misconfiguration/envoy-metadata-disclosure.yaml:7a9206bd03bf9b960212b6753cd
 http/misconfiguration/eslint-ignore-exposure.yaml:6dd89a91451bfd8bf4817c8d6bdaa8544e055b0f
 http/misconfiguration/espeasy-mega-exposure.yaml:638e06c949cc87668cbb5f074994eaff4369bdc8
 http/misconfiguration/esphome-dashboard.yaml:a825b1e7a20cdefac92cc3c4c3b9fff8ed3581d1
+http/misconfiguration/etcd-unauthenticated-api-v3.yaml:455d145bca3f660a0e7c52939c59d319d6acc9cd
 http/misconfiguration/etcd-unauthenticated-api.yaml:e48da79b018c15cdee5a525f24759e72215adf1c
+http/misconfiguration/etcd-unauthenticated-raft.yaml:9279820bebc89b328a4e3847d56ac53fce3439c5
 http/misconfiguration/everything-listing.yaml:c9c0c0ff7cc1248d4e0f8e542a84a84489d6ecae
 http/misconfiguration/exist-db-dashboard-access.yaml:d3b43e0b5515d08d901075771f8b54737794c220
 http/misconfiguration/expect-ct-misconfigured.yaml:34c0be827c7475cf24895d785a6c6a9ee49db716
@@ -13867,7 +13872,7 @@ ssl/tls-version.yaml:396e167fe4dc47cc31a3823287f767ac4ba3ed6d
 ssl/untrusted-root-certificate.yaml:bc78917f6ed97df44ec66fd168e6d3d51f2050a9
 ssl/weak-cipher-suites.yaml:a2c5b71896965bcbb458e1d2a5bcf54981301156
 ssl/wildcard-tls.yaml:93487bb9d9c28bf84ae1928887b0dafef67b4117
-templates-checksum.txt:3ca513b1cd204b145b9facd344edc7b059f68511
+templates-checksum.txt:d678c2439ec69026524e7092c89203cd17425071
 workflows/74cms-workflow.yaml:bb010e767ad32b906153e36ea618be545b4e22d0
 workflows/acrolinx-workflow.yaml:8434089bb55dec3d7b2ebc6a6f340e73382dd0c4
 workflows/activemq-workflow.yaml:20eb2f6dea0ca25d1bd556b5a63e5f25686f2376
